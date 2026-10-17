@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary SEO -->
+    <title>Aesthetic & Dermatology Treatments | HydraFacial, Laser, PRP in Pune | Skinfit Aesthetics</title>
+    <meta name="description" content="Explore advanced skin treatments at Skinfit Aesthetics, Kharadi, Pune — HydraFacial, chemical peels, laser hair removal, PRP, Botox, fillers & more. Book a consultation.">
+    <meta name="keywords" content="HydraFacial Pune, chemical peels Pune, laser hair removal Pune, PRP treatment Pune, Botox Pune, fillers Pune, microneedling Pune, aesthetic treatments Kharadi">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://skinfitaesthetics.in/treatments.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://skinfitaesthetics.in/treatments.html">
+    <meta property="og:title" content="Aesthetic Treatments | Skinfit Aesthetics Pune">
+    <meta property="og:description" content="HydraFacial, laser hair removal, PRP, Botox, fillers, chemical peels & more at Skinfit Aesthetics, Kharadi, Pune.">
+    <meta property="og:image" content="https://skinfitaesthetics.in/assets/og-image.jpg">
+    <meta property="og:locale" content="en_IN">
+    <meta property="og:site_name" content="Skinfit Aesthetics">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Aesthetic Treatments | Skinfit Aesthetics Pune">
+    <meta name="twitter:description" content="HydraFacial, laser, PRP, Botox & more at Skinfit Aesthetics, Kharadi, Pune.">
+    <meta name="twitter:image" content="https://skinfitaesthetics.in/assets/og-image.jpg">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Aesthetic & Dermatology Treatments",
+      "url": "https://skinfitaesthetics.in/treatments.html",
+      "description": "Skinfit Aesthetics offers a full range of aesthetic and dermatological treatments including HydraFacial, chemical peels, laser hair removal, PRP, Botox, fillers, and more.",
+      "isPartOf": {
+        "@type": "WebSite",
+        "name": "Skinfit Aesthetics",
+        "url": "https://skinfitaesthetics.in"
+      },
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://skinfitaesthetics.in/" },
+          { "@type": "ListItem", "position": 2, "name": "Treatments", "item": "https://skinfitaesthetics.in/treatments.html" }
+        ]
+      }
+    }
+    </script>
+
+    <link rel="icon" type="image/png" href="/assets/icons/logo-dark-min.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+        :root {
+            --brand: #CFAA89;
+            --brand-light: #DDC6AC;
+            --brand-dark: #785743;
+            --brand-soft: #A7836A;
+        }
+
+        * {
+            transition-property: color, background-color, border-color;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-duration: 150ms;
+        }
+
+        .tail-container *:not(i) { font-family: 'Raleway', system-ui, sans-serif; }
+        .logo-font { font-family: 'Raleway', sans-serif; }
+        html { scroll-behavior: smooth; }
+
+        /* ─── Nav ─── */
+        .sticky-header { backdrop-filter: blur(12px); }
+        nav.sticky-header { position: sticky; top: 0; z-index: 1000; }
+        nav .dropdown, nav [class*="group-hover"] { z-index: 1001 !important; }
+
+        .dropdown { animation: dropdownFade 0.2s ease forwards; }
+        @keyframes dropdownFade {
+            from { opacity: 0; transform: translateY(-8px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+
+        nav a:not(.flex):not([class*="bg-"]):not([class*="border"]) { position: relative; }
+        nav a:not(.flex):not([class*="bg-"]):not([class*="border"])::after {
+            content: ''; position: absolute; bottom: -2px; left: 0;
+            width: 0; height: 2px; background: var(--brand-dark);
+            transition: width 0.25s ease;
+        }
+        nav a:not(.flex):not([class*="bg-"]):not([class*="border"]):hover::after { width: 100%; }
+
+        /* ─── WhatsApp pulse ─── */
+        @keyframes wpPulse {
+            0%   { box-shadow: 0 0 0 0 rgba(37,211,102,0.5); }
+            70%  { box-shadow: 0 0 0 12px rgba(37,211,102,0); }
+            100% { box-shadow: 0 0 0 0 rgba(37,211,102,0); }
+        }
+        .whatsapp-pulse { animation: wpPulse 2.2s ease-out infinite; }
+        .whatsapp-button { padding: 5px 15px; }
+
+        /* ─── Page header entrance ─── */
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(28px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+        .page-pill  { animation: fadeUp 0.6s cubic-bezier(0.34,1.56,0.64,1) 0.1s both; }
+        .page-title { animation: fadeUp 0.7s cubic-bezier(0.4,0,0.2,1) 0.25s both; }
+        .page-sub   { animation: fadeUp 0.7s cubic-bezier(0.4,0,0.2,1) 0.4s both; }
+
+        /* ─── Scroll-reveal ─── */
+        .reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.55s cubic-bezier(0.4,0,0.2,1),
+                        transform 0.55s cubic-bezier(0.4,0,0.2,1);
+        }
+        .reveal.visible { opacity: 1; transform: translateY(0); }
+
+        /* ─── Card ─── */
+        .treatment-card {
+            transition: transform 0.32s cubic-bezier(0.4,0,0.2,1),
+                        box-shadow 0.32s cubic-bezier(0.4,0,0.2,1),
+                        border-color 0.2s ease;
+        }
+        .treatment-card img { transition: transform 0.45s cubic-bezier(0.4,0,0.2,1); }
+        .card-arrow { transition: transform 0.25s ease; display: inline-block; }
+
+        /* ─── Modal ─── */
+        @keyframes modalPop {
+            from { opacity: 0; transform: scale(0.93) translateY(20px); }
+            to   { opacity: 1; transform: scale(1) translateY(0); }
+        }
+        .modal-content { animation: modalPop 0.35s cubic-bezier(0.34,1.56,0.64,1) both; }
+        .modal-img { transition: transform 0.6s ease; }
+
+        /* ─── Footer ─── */
+        footer a { display: inline-block; transition: color 0.2s ease, transform 0.2s ease; }
+
+        /* ─── Hover effects: pointer devices only ─── */
+        @media (hover: hover) {
+            .treatment-card:hover {
+                transform: translateY(-6px);
+                box-shadow: 0 24px 48px -12px rgba(120,87,67,0.18);
+            }
+            .treatment-card:hover img { transform: scale(1.07); }
+            .treatment-card:hover .card-arrow { transform: translateX(5px); }
+            footer a:hover { transform: translateX(4px); }
+        }
+
+        /* ─── Mobile: reduce reveal distance ─── */
+        @media (max-width: 639px) {
+            .reveal { transform: translateY(12px); }
+        }
+
+        /* ─── Mobile: modal slides up from bottom ─── */
+        @media (max-width: 639px) {
+            #detail-modal { padding: 0.5rem; align-items: flex-end; }
+            .modal-content { border-bottom-left-radius: 0; border-bottom-right-radius: 0; max-height: 92vh; }
+        }
+
+        /* ─── Accessibility: reduced motion ─── */
+        @media (prefers-reduced-motion: reduce) {
+            *, .page-pill, .page-title, .page-sub, .whatsapp-pulse {
+                animation: none !important;
+                transition-duration: 0.01ms !important;
+            }
+            .reveal { opacity: 1 !important; transform: none !important; }
+        }
+    </style>
+</head>
+
+<body class="tail-container bg-gray-50">
+
+    <!-- NAV -->
+    <nav class="sticky-header bg-white border-b border-gray-100 shadow-sm z-50">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="index.html" class="flex items-center gap-x-3">
+                    <img src="./assets/logo-dark-min.png" alt="Skinfit Aesthetics Logo" class="w-14 h-14 object-contain">
+                    <div class="logo-font text-3xl tracking-tight">
+                        <span class="text-brand-dark">Skinfit</span>
+                        <span class="text-gray-900">Aesthetics</span>
+                    </div>
+                </a>
+
+                <div class="hidden lg:flex items-center gap-x-9 text-base font-medium text-gray-700">
+                    <a href="index.html#about" class="hover:text-brand-dark flex items-center gap-x-1">About</a>
+                    <a href="index.html#contact" class="hover:text-brand-dark flex items-center gap-x-1">Contact us</a>
+
+                    <div class="group relative">
+                        <a href="concerns.html" class="hover:text-brand-dark flex items-center gap-x-1">
+                            Concerns <i class="fa-solid fa-chevron-down text-xs ml-1"></i>
+                        </a>
+                        <div class="dropdown hidden group-hover:block absolute top-full left-0 pt-3 w-72 bg-white rounded-3xl shadow-2xl border border-gray-100 py-2 z-50">
+                            <div class="max-h-80 overflow-y-auto px-3">
+                                <a href="concerns.html#acne-pimples" class="block px-5 py-3 hover:bg-brand-dark/10 hover:text-brand-dark rounded-2xl text-sm">Acne / Pimples</a>
+                                <a href="concerns.html#acne-scar" class="block px-5 py-3 hover:bg-brand-dark/10 hover:text-brand-dark rounded-2xl text-sm">Acne Scar</a>
+                                <a href="concerns.html#pigmentation-glow" class="block px-5 py-3 hover:bg-brand-dark/10 hover:text-brand-dark rounded-2xl text-sm">Pigmentation / Glow</a>
+                                <a href="concerns.html#anti-ageing" class="block px-5 py-3 hover:bg-brand-dark/10 hover:text-brand-dark rounded-2xl text-sm">Anti Ageing</a>
+                                <a href="concerns.html#hair-loss" class="block px-5 py-3 hover:bg-brand-dark/10 hover:text-brand-dark rounded-2xl text-sm">Hair Loss</a>
+                                <a href="concerns.html#excessive-hair-growth" class="block px-5 py-3 hover:bg-brand-dark/10 hover:text-brand-dark rounded-2xl text-sm">Excessive Hair Growth</a>
+                                <a href="concerns.html#clinical-dermatology" class="block px-5 py-3 hover:bg-brand-dark/10 hover:text-brand-dark rounded-2xl text-sm">Clinical Dermatology</a>
+                                <a href="concerns.html#paediatric-geriatric" class="block px-5 py-3 hover:bg-brand-dark/10 hover:text-brand-dark rounded-2xl text-sm">Paediatric &amp; Geriatric Concerns</a>
+                                <a href="concerns.html#excessive-sweating" class="block px-5 py-3 hover:bg-brand-dark/10 hover:text-brand-dark rounded-2xl text-sm">Excessive Sweating</a>
+                                <a href="concerns.html#nail-disorders" class="block px-5 py-3 hover:bg-brand-dark/10 hover:text-brand-dark rounded-2xl text-sm">Nail Disorders</a>
+                                <a href="concerns.html#fungal-infection" class="block px-5 py-3 hover:bg-brand-dark/10 hover:text-brand-dark rounded-2xl text-sm">Fungal Infection</a>
+                                <a href="concerns.html#allergies" class="block px-5 py-3 hover:bg-brand-dark/10 hover:text-brand-dark rounded-2xl text-sm">Allergies</a>
+                                <a href="concerns.html#dandruff" class="block px-5 py-3 hover:bg-brand-dark/10 hover:text-brand-dark rounded-2xl text-sm">Dandruff</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="group relative">
+                        <a href="treatments.html" class="hover:text-brand-dark flex items-center gap-x-1">
+                            Treatments <i class="fa-solid fa-chevron-down text-xs ml-1"></i>
+                        </a>
+                        <div class="dropdown hidden group-hover:block absolute top-full left-0 pt-3 w-72 bg-white rounded-3xl shadow-2xl border border-gray-100 py-2 z-50">
+                            <div class="max-h-80 overflow-y-auto px-3 grid grid-cols-2 gap-x-2 text-sm">
+                                <a href="treatments.html#chemical-peels" class="block px-5 py-3 hover:bg-brand-dark/10 hover:text-brand-dark rounded-2xl">Chemical Peels</a>
+                                <a href="treatments.html#vampire-facial" class="block px-5 py-3 hover:bg-brand-dark/10 hover:text-brand-dark rounded-2xl">Vampire Facial</a>
+                                <a href="treatments.html#microneedling" class="block px-5 py-3 hover:bg-brand-dark/10 hover:text-brand-dark rounded-2xl">Microneedling</a>
+                                <a href="treatments.html#hydrafacial" class="block px-5 py-3 hover:bg-brand-dark/10 hover:text-brand-dark rounded-2xl">Hydrafacial</a>
+                                <a href="treatments.html#mole-removal" class="block px-5 py-3 hover:bg-brand-dark/10 hover:text-brand-dark rounded-2xl">Mole Removal</a>
+                                <a href="treatments.html#scar-correction" class="block px-5 py-3 hover:bg-brand-dark/10 hover:text-brand-dark rounded-2xl">Scar Correction</a>
+                                <a href="treatments.html#mesotherapy" class="block px-5 py-3 hover:bg-brand-dark/10 hover:text-brand-dark rounded-2xl">Mesotherapy</a>
+                                <a href="treatments.html#exosomes" class="block px-5 py-3 hover:bg-brand-dark/10 hover:text-brand-dark rounded-2xl">Exosomes</a>
+                                <a href="treatments.html#salmon-dna-pdrn" class="block px-5 py-3 hover:bg-brand-dark/10 hover:text-brand-dark rounded-2xl">Salmon DNA / PDRN</a>
+                                <a href="treatments.html#laser-hair-reduction" class="block px-5 py-3 hover:bg-brand-dark/10 hover:text-brand-dark rounded-2xl">Laser Hair Reduction</a>
+                                <a href="treatments.html#iv-drips" class="block px-5 py-3 hover:bg-brand-dark/10 hover:text-brand-dark rounded-2xl">IV Drips</a>
+                                <a href="treatments.html#prp" class="block px-5 py-3 hover:bg-brand-dark/10 hover:text-brand-dark rounded-2xl">Platelet Rich Plasma (PRP)</a>
+                                <a href="treatments.html#gfc" class="block px-5 py-3 hover:bg-brand-dark/10 hover:text-brand-dark rounded-2xl">GFC</a>
+                                <a href="treatments.html#hair-threads" class="block px-5 py-3 hover:bg-brand-dark/10 hover:text-brand-dark rounded-2xl">Hair Threads</a>
+                                <a href="treatments.html#dutasteride" class="block px-5 py-3 hover:bg-brand-dark/10 hover:text-brand-dark rounded-2xl">Dutasteride</a>
+                                <a href="treatments.html#fat-reduction" class="block px-5 py-3 hover:bg-brand-dark/10 hover:text-brand-dark rounded-2xl">Fat Reduction</a>
+                                <a href="treatments.html#fillers" class="block px-5 py-3 hover:bg-brand-dark/10 hover:text-brand-dark rounded-2xl">Fillers</a>
+                                <a href="treatments.html#botox" class="block px-5 py-3 hover:bg-brand-dark/10 hover:text-brand-dark rounded-2xl">BOTOX</a>
+                                <a href="treatments.html#skin-boosters" class="block px-5 py-3 hover:bg-brand-dark/10 hover:text-brand-dark rounded-2xl">Skin Boosters</a>
+                                <a href="treatments.html#bridal-skincare" class="block px-5 py-3 hover:bg-brand-dark/10 hover:text-brand-dark rounded-2xl">Bridal Skincare</a>
+                                <a href="treatments.html#nonsurgical-threadlift" class="block px-5 py-3 hover:bg-brand-dark/10 hover:text-brand-dark rounded-2xl">Nonsurgical Threadlift / Facelift</a>
+                                <a href="treatments.html#hair-transplant" class="block px-5 py-3 hover:bg-brand-dark/10 hover:text-brand-dark rounded-2xl">Hair Transplant</a>
+                                <a href="treatments.html#ear-piercing" class="block px-5 py-3 hover:bg-brand-dark/10 hover:text-brand-dark rounded-2xl">Ear Piercing</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hidden lg:flex items-center gap-x-4">
+                    <a href="https://api.whatsapp.com/send?phone=917276825422&text=Hello%20Skinfit%20Aesthetics%2C%20I%20would%20like%20to%20book%20an%20appointment"
+                        target="_blank"
+                        class="whatsapp-pulse flex items-center justify-center gap-x-3 bg-[#25D366] text-white h-14 rounded-3xl text-sm font-medium whatsapp-button">
+                        <i class="fa-brands fa-whatsapp text-2xl"></i>
+                        BOOK VIA WHATSAPP
+                    </a>
+                    <a href="index.html#contact"
+                        class="border border-brand-dark hover:bg-brand-dark hover:text-white text-brand-dark px-7 py-3 rounded-3xl font-medium text-sm">
+                        Book Appointment
+                    </a>
+                </div>
+
+                <button onclick="toggleMobileMenu()" class="lg:hidden w-11 h-11 flex items-center justify-center text-2xl text-gray-700 hover:text-brand-dark">
+                    <i class="fa-solid fa-bars" id="hamburger-icon"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t px-6 py-6 shadow-xl">
+            <div class="flex flex-col gap-y-6 text-base">
+                <a href="index.html#about" onclick="toggleMobileMenu()" class="font-medium">About</a>
+                <a href="index.html#contact" onclick="toggleMobileMenu()" class="font-medium">Contact us / Book Appointment</a>
+                <div class="border-t pt-4">
+                    <p class="text-xs uppercase tracking-widest text-gray-400 mb-3">Concerns</p>
+                    <div class="grid grid-cols-2 gap-2 text-sm">
+                        <a href="concerns.html#acne-pimples" onclick="toggleMobileMenu()" class="py-2 px-4 hover:bg-gray-100 rounded-2xl">Acne / Pimples</a>
+                        <a href="concerns.html#acne-scar" onclick="toggleMobileMenu()" class="py-2 px-4 hover:bg-gray-100 rounded-2xl">Acne Scar</a>
+                        <a href="concerns.html" onclick="toggleMobileMenu()" class="py-2 px-4 hover:bg-gray-100 rounded-2xl text-brand-dark font-medium">View all →</a>
+                    </div>
+                </div>
+                <div class="border-t pt-4">
+                    <p class="text-xs uppercase tracking-widest text-gray-400 mb-3">Treatments</p>
+                    <div class="grid grid-cols-2 gap-2 text-sm">
+                        <a href="treatments.html#chemical-peels" onclick="toggleMobileMenu()" class="py-2 px-4 hover:bg-gray-100 rounded-2xl">Chemical Peels</a>
+                        <a href="treatments.html#botox" onclick="toggleMobileMenu()" class="py-2 px-4 hover:bg-gray-100 rounded-2xl">BOTOX</a>
+                        <a href="treatments.html" onclick="toggleMobileMenu()" class="py-2 px-4 hover:bg-gray-100 rounded-2xl text-brand-dark font-medium">View all →</a>
+                    </div>
+                </div>
+                <div class="pt-4 border-t">
+                    <a href="https://wa.me/917276825422?text=Hello%20Skinfit%20Aesthetics%2C%20I%20would%20like%20to%20book%20an%20appointment"
+                        target="_blank" onclick="toggleMobileMenu()"
+                        class="flex justify-center items-center gap-x-2 bg-brand-dark text-white py-4 rounded-3xl font-medium">
+                        <i class="fa-brands fa-whatsapp text-xl"></i>
+                        Book via WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- PAGE HEADER -->
+    <div class="bg-white border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 py-10 sm:py-14 lg:py-16 text-center">
+            <span class="page-pill inline-block px-4 sm:px-5 py-2 bg-brand-dark/10 text-brand-dark rounded-3xl text-xs sm:text-sm font-semibold tracking-wide">ADVANCED • SAFE • RESULTS-DRIVEN</span>
+            <h1 class="page-title text-4xl sm:text-5xl lg:text-6xl font-semibold logo-font mt-4 sm:mt-5 tracking-tight">Our Treatments</h1>
+            <p class="page-sub max-w-md mx-auto mt-3 sm:mt-4 text-gray-500 text-base sm:text-lg">Evidence-based aesthetic &amp; dermatological procedures performed by experts.</p>
+        </div>
+    </div>
+
+    <!-- GRID -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14 pb-16 sm:pb-24">
+        <div id="treatments-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 lg:gap-7"></div>
+    </div>
+
+    <!-- MODAL -->
+    <div id="detail-modal"
+         onclick="if(event.target.id==='detail-modal') closeModal()"
+         class="hidden fixed inset-0 bg-black/60 z-[9999] items-center justify-center p-2 sm:p-4">
+        <div onclick="event.stopImmediatePropagation()"
+             class="modal-content bg-white w-full max-w-2xl rounded-3xl overflow-hidden max-h-[92vh] sm:max-h-[90vh] flex flex-col">
+            <div class="relative flex-shrink-0">
+                <button onclick="closeModal()"
+                        class="absolute top-3 right-3 sm:top-5 sm:right-5 w-9 h-9 bg-white/90 backdrop-blur rounded-full text-gray-500 hover:text-gray-800 flex items-center justify-center text-lg z-10 shadow-sm">
+                    ✕
+                </button>
+                <div class="overflow-hidden h-48 sm:h-64 lg:h-72">
+                    <img id="modal-image" src="" alt="" class="modal-img w-full h-48 sm:h-64 lg:h-72 object-cover">
+                </div>
+            </div>
+            <div class="p-5 sm:p-8 overflow-y-auto">
+                <h2 id="modal-title" class="text-2xl sm:text-3xl font-semibold logo-font"></h2>
+                <div id="modal-desc" class="mt-4 sm:mt-5 text-gray-600 leading-relaxed prose space-y-3 text-sm sm:text-base"></div>
+                <a href="index.html#contact"
+                   class="mt-6 sm:mt-8 inline-flex items-center gap-x-2 sm:gap-x-3 bg-brand-dark hover:bg-[#C19A6B] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-3xl text-sm font-medium transition-colors duration-200">
+                    BOOK THIS TREATMENT
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        tailwind.config = { theme: { extend: { colors: { brand: '#CFAA89', 'brand-dark': '#785743', 'brand-soft': '#A7836A' } } } }
+
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu')
+            const icon = document.getElementById('hamburger-icon')
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden')
+                icon.classList.replace('fa-bars', 'fa-xmark')
+            } else {
+                menu.classList.add('hidden')
+                icon.classList.replace('fa-xmark', 'fa-bars')
+            }
+        }
+
+        const treatmentsData = {
+            "chemical-peels":       { title: "Chemical Peels",               image: "./assets/treatments/peels.jpg",      desc: "<p>Medical-grade peels remove dead skin cells, reduce pigmentation, acne scars, and fine lines for glowing, even-toned skin.</p>" },
+            "vampire-facial":       { title: "Vampire Facial",                image: "./assets/treatments/vampire.jpg",    desc: "<p>PRP-infused microneedling stimulates collagen and gives your skin a natural, youthful radiance.</p>" },
+            "microneedling":        { title: "Microneedling",                 image: "./assets/treatments/microneedling.jpg", desc: "<p>Collagen induction therapy improves scars, wrinkles, and texture with minimal downtime.</p>" },
+            "hydrafacial":          { title: "Hydrafacial",                   image: "./assets/treatments/hydrafacial.jpg",desc: "<p>Deep cleansing, exfoliation, extraction, and infusion in one relaxing 30-minute session.</p>" },
+            "mole-removal":         { title: "Mole Removal",                  image: "./assets/treatments/mole.jpg",       desc: "<p>Radiofrequency or laser removal of moles, skin tags, and warts with minimal scarring.</p>" },
+            "scar-correction":      { title: "Scar Correction",               image: "./assets/treatments/scar.jpg",       desc: "<p>Laser, subcision, and filler techniques to significantly reduce the appearance of scars.</p>" },
+            "mesotherapy":          { title: "Mesotherapy",                   image: "./assets/treatments/mesotherapy.jpg",desc: "<p>Vitamin and growth-factor injections for hair regrowth and skin rejuvenation.</p>" },
+            "exosomes":             { title: "Exosomes",                      image: "./assets/treatments/exosomes.jpg",   desc: "<p>Latest regenerative treatment using stem-cell-derived exosomes for superior skin and hair repair.</p>" },
+            "salmon-dna-pdrn":      { title: "Salmon DNA / PDRN",             image: "./assets/treatments/pdrn.jpg",       desc: "<p>Polynucleotide injections that repair damaged skin cells and boost collagen naturally.</p>" },
+            "laser-hair-reduction": { title: "Laser Hair Reduction",          image: "./assets/treatments/laser-hair.jpg", desc: "<p>Painless, permanent hair removal using the latest diode laser technology.</p>" },
+            "iv-drips":             { title: "IV Drips",                      image: "./assets/treatments/iv.jpg",         desc: "<p>Glutathione, vitamin, and antioxidant drips for skin brightening and overall wellness.</p>" },
+            "prp":                  { title: "Platelet Rich Plasma (PRP)",    image: "./assets/treatments/prp.jpg",        desc: "<p>Gold-standard natural treatment using your own blood for hair and skin rejuvenation.</p>" },
+            "gfc":                  { title: "GFC",                           image: "./assets/treatments/gfc.jpg",        desc: "<p>Growth factor concentrate combined with threads for advanced hair restoration.</p>" },
+            "hair-threads":         { title: "Hair Threads",                  image: "./assets/treatments/hair-threads.jpg", desc: "<p>Growth factor concentrate combined with threads for advanced hair restoration.</p>" },
+            "dutasteride":          { title: "Dutasteride",                   image: "./assets/treatments/dutasteride.jpg",desc: "<p>Advanced oral and injectable therapy for stubborn hair loss in men and women.</p>" },
+            "fat-reduction":        { title: "Fat Reduction",                 image: "./assets/treatments/fat.jpg",        desc: "<p>Non-surgical body contouring with injectable lipolytic solutions and HIFU.</p>" },
+            "fillers":              { title: "Fillers",                       image: "./assets/treatments/fillers.jpg",    desc: "<p>Hyaluronic acid fillers to restore volume, define jawline, and smooth wrinkles.</p>" },
+            "botox":                { title: "BOTOX",                         image: "./assets/treatments/botox.jpg",      desc: "<p>Neurotoxin injections that relax dynamic wrinkles and prevent new lines from forming.</p>" },
+            "skin-boosters":        { title: "Skin Boosters",                 image: "./assets/treatments/boosters.jpg",   desc: "<p>Micro-injections of hyaluronic acid and antioxidants for deep hydration and glow.</p>" },
+            "bridal-skincare":      { title: "Bridal Skincare",               image: "./assets/treatments/bridal.jpg",     desc: "<p>Curated 3–6 month pre-wedding glow-up package for flawless bridal skin.</p>" },
+            "nonsurgical-threadlift":{ title: "Nonsurgical Threadlift / Facelift", image: "./assets/treatments/threadlift.jpg", desc: "<p>Instant lift and tightening using PDO threads with zero downtime.</p>" },
+            "hair-transplant":      { title: "Hair Transplant",               image: "./assets/treatments/transplant.jpg", desc: "<p>FUE technique for natural, permanent hair restoration with high density.</p>" },
+            "ear-piercing":         { title: "Ear Piercing",                  image: "./assets/treatments/piercing.jpg",   desc: "<p>Safe, sterile, medical-grade ear piercing for all ages using hypoallergenic studs.</p>" }
+        }
+
+        function renderTreatmentsGrid() {
+            const grid = document.getElementById('treatments-grid')
+            grid.innerHTML = Object.keys(treatmentsData).map((key, i) => {
+                const item = treatmentsData[key]
+                const delay = (i % 4) * 80
+                return `
+                <div id="card-${key}" onclick="openModal('${key}')"
+                     class="reveal treatment-card bg-white rounded-3xl overflow-hidden cursor-pointer border border-gray-100 hover:border-brand-soft/40"
+                     style="transition-delay:${delay}ms">
+                    <div class="overflow-hidden h-52">
+                        <img src="${item.image}" alt="${item.title}" class="w-full h-52 object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-semibold text-lg leading-snug">${item.title}</h3>
+                        <p class="text-sm text-gray-400 mt-2">Click to learn more about this treatment</p>
+                        <div class="mt-5 text-brand-dark text-sm font-semibold flex items-center gap-x-1">
+                            Learn more
+                            <span class="card-arrow ml-auto text-xl leading-none">→</span>
+                        </div>
+                    </div>
+                </div>`
+            }).join('')
+
+            requestAnimationFrame(() => {
+                const cards = grid.querySelectorAll('.reveal')
+                const obs = new IntersectionObserver((entries) => {
+                    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target) } })
+                }, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' })
+                cards.forEach(c => obs.observe(c))
+            })
+        }
+
+        let currentModalKey = null
+
+        function openModal(key) {
+            currentModalKey = key
+            const item = treatmentsData[key]
+            if (!item) return
+            document.getElementById('modal-image').src = item.image
+            document.getElementById('modal-title').innerHTML = item.title
+            document.getElementById('modal-desc').innerHTML = item.desc
+            const modal = document.getElementById('detail-modal')
+            modal.classList.remove('hidden')
+            modal.classList.add('flex')
+            const content = modal.querySelector('.modal-content')
+            content.style.animation = 'none'
+            content.offsetHeight
+            content.style.animation = ''
+            history.replaceState(null, '', `${window.location.pathname}#${key}`)
+            document.body.style.overflow = 'hidden'
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('detail-modal')
+            modal.classList.add('hidden')
+            modal.classList.remove('flex')
+            document.body.style.overflow = ''
+        }
+
+        document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal() })
+
+        function initTreatments() {
+            renderTreatmentsGrid()
+            const hash = window.location.hash.replace(/^#/, '')
+            if (hash && treatmentsData[hash]) openModal(hash)
+            console.log('%c✅ Treatments page loaded', 'color:#785743; font-size:13px')
+        }
+
+        document.addEventListener('DOMContentLoaded', initTreatments)
+    </script>
+</body>
+</html>

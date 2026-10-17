@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary SEO -->
+    <title>Skinfit Aesthetics | Dermatologist in Kharadi, Pune | Skin, Hair & Laser Clinic</title>
+    <meta name="description" content="Skinfit Aesthetics is a trusted dermatology and aesthetic clinic in Kharadi, Pune. Expert treatments for acne, pigmentation, hair loss, laser, HydraFacial & more. Book today.">
+    <meta name="keywords" content="dermatologist in Pune, skin clinic Kharadi, acne treatment Pune, hair loss treatment Pune, laser hair removal Pune, HydraFacial Pune, aesthetic clinic Pune, Skinfit Aesthetics">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://skinfitaesthetics.in/">
+
+    <!-- Open Graph (Facebook, WhatsApp previews) -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://skinfitaesthetics.in/">
+    <meta property="og:title" content="Skinfit Aesthetics | Dermatologist in Kharadi, Pune">
+    <meta property="og:description" content="Expert skin, hair & aesthetic care in Kharadi, Pune. Treatments for acne, pigmentation, hair loss, laser & more. Book your consultation today.">
+    <meta property="og:image" content="https://skinfitaesthetics.in/assets/og-image.jpg">
+    <meta property="og:locale" content="en_IN">
+    <meta property="og:site_name" content="Skinfit Aesthetics">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Skinfit Aesthetics | Dermatologist in Kharadi, Pune">
+    <meta name="twitter:description" content="Expert skin, hair & aesthetic care in Kharadi, Pune. Book your consultation today.">
+    <meta name="twitter:image" content="https://skinfitaesthetics.in/assets/og-image.jpg">
+
+    <!-- Local Business Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Dermatology",
+      "name": "Skinfit Aesthetics",
+      "image": "https://skinfitaesthetics.in/assets/logo-dark-min.png",
+      "url": "https://skinfitaesthetics.in",
+      "telephone": "+91-7276825422",
+      "priceRange": "₹₹",
+      "description": "Expert dermatology and aesthetic clinic in Kharadi, Pune offering treatments for acne, pigmentation, hair loss, laser, HydraFacial and more.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Krish Heights, Thitewasti Main Road, Mundhwa - Kharadi Rd, opp. H P Petrol Pump, near Bank of Baroda",
+        "addressLocality": "Kharadi",
+        "addressRegion": "Pune",
+        "postalCode": "411014",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 18.5450632,
+        "longitude": 73.9310773
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Friday","Saturday","Sunday","Monday","Tuesday","Wednesday"],
+          "opens": "16:00",
+          "closes": "21:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Thursday",
+          "opens": "09:00",
+          "closes": "21:00"
+        }
+      ],
+      "sameAs": [
+        "https://www.instagram.com/dr.varun_skinfit/",
+        "https://www.instagram.com/skinfit_aesthetics_clinic/"
+      ],
+      "medicalSpecialty": "Dermatology",
+      "hasMap": "https://maps.google.com/?cid=12709734892921299357"
+    }
+    </script>
+
+    <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&amp;family=Playfair+Display:wght@600&amp;display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+        :root {
+            --brand: #CFAA89;
+            --brand-light: #DDC6AC;
+            --brand-dark: #785743;
+            --brand-soft: #A7836A;
+        }
+
+        * {
+            transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-duration: 150ms;
+        }
+
+        .tail-container *:not(i) {
+            font-family: 'Raleway', system_ui, sans-serif;
+        }
+
+        .logo-font {
+            font-family: 'Raleway', sans-serif;
+        }
+
+        .hero-bg {
+            background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('./assets/hero.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .sticky-header {
+            backdrop-filter: blur(12px);
+        }
+
+        .dropdown {
+            animation: dropdownFade 0.2s ease forwards;
+        }
+
+        @keyframes dropdownFade {
+            from {
+                opacity: 0;
+                transform: translateY(-8px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .card-hover {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 25px 25px 0 -10px rgba(210, 180, 140, 0.15);
+        }
+
+        .modal-content {
+            animation: modalPop 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        .whatsapp-button {
+            padding: 5px 15px 5px 15px
+        }
+
+        .home-bg {
+            background-image: url('./assets/home-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        /* ─── Scroll-reveal base ─── */
+        .reveal {
+            opacity: 0;
+            transform: translateY(32px);
+            transition: opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1),
+                        transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .reveal.reveal-left {
+            transform: translateX(-36px);
+        }
+        .reveal.reveal-right {
+            transform: translateX(36px);
+        }
+        .reveal.reveal-scale {
+            transform: scale(0.94);
+        }
+        .reveal.visible {
+            opacity: 1 !important;
+            transform: translate(0) scale(1) !important;
+        }
+
+        /* Stagger delays */
+        .delay-100 { transition-delay: 0.1s; }
+        .delay-200 { transition-delay: 0.2s; }
+        .delay-300 { transition-delay: 0.3s; }
+        .delay-400 { transition-delay: 0.4s; }
+        .delay-500 { transition-delay: 0.5s; }
+        .delay-600 { transition-delay: 0.6s; }
+
+        /* ─── Hero section entrance ─── */
+        @keyframes heroFadeUp {
+            from { opacity: 0; transform: translateY(40px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes heroBadge {
+            from { opacity: 0; transform: translateY(-16px) scale(0.95); }
+            to   { opacity: 1; transform: translateY(0) scale(1); }
+        }
+        .hero-badge  { animation: heroBadge  0.7s cubic-bezier(0.34,1.56,0.64,1) 0.2s both; }
+        .hero-title  { animation: heroFadeUp 0.8s cubic-bezier(0.4, 0, 0.2, 1)   0.45s both; }
+        .hero-sub    { animation: heroFadeUp 0.8s cubic-bezier(0.4, 0, 0.2, 1)   0.65s both; }
+        .hero-ctas   { animation: heroFadeUp 0.8s cubic-bezier(0.4, 0, 0.2, 1)   0.85s both; }
+
+        /* ─── Nav entrance ─── */
+        @keyframes navSlideDown {
+            from { opacity: 0; transform: translateY(-100%); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+        /* Nav animation removed — it creates a stacking context that traps dropdowns behind the hero */
+        nav.sticky-header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        /* Ensure dropdowns always sit above everything */
+        nav .dropdown, nav [class*="group-hover"] {
+            z-index: 1001 !important;
+        }
+
+        /* ─── Scroll indicator bounce ─── */
+        @keyframes scrollBounce {
+            0%, 100% { transform: translateY(0); opacity: 0.7; }
+            50%       { transform: translateY(8px); opacity: 1; }
+        }
+        .scroll-indicator { animation: scrollBounce 1.8s ease-in-out infinite; }
+
+        /* ─── WhatsApp pulse glow ─── */
+        @keyframes wpPulse {
+            0%   { box-shadow: 0 0 0 0 rgba(37,211,102,0.5); }
+            70%  { box-shadow: 0 0 0 12px rgba(37,211,102,0); }
+            100% { box-shadow: 0 0 0 0 rgba(37,211,102,0); }
+        }
+        .whatsapp-pulse { animation: wpPulse 2.2s ease-out infinite; }
+
+        /* ─── Team card hover ─── */
+        .team-card {
+            transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+                        box-shadow 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+            border-radius: 1.5rem;
+            padding: 1rem;
+            margin: -1rem;
+        }
+        .team-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 20px 40px -10px rgba(120,87,67,0.15);
+        }
+        .team-card img {
+            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .team-card:hover img {
+            transform: scale(1.04);
+        }
+
+        /* ─── Underline hover on nav links ─── */
+        nav a:not(.flex):not([class*="bg-"]):not([class*="border"]) {
+            position: relative;
+        }
+        nav a:not(.flex):not([class*="bg-"]):not([class*="border"])::after {
+            content: '';
+            position: absolute;
+            bottom: -2px; left: 0;
+            width: 0; height: 2px;
+            background: var(--brand-dark);
+            transition: width 0.25s ease;
+        }
+        nav a:not(.flex):not([class*="bg-"]):not([class*="border"]):hover::after {
+            width: 100%;
+        }
+
+        /* ─── Section label pill pop ─── */
+        @keyframes pillPop {
+            from { opacity: 0; transform: scale(0.85) translateY(8px); }
+            to   { opacity: 1; transform: scale(1) translateY(0); }
+        }
+        .section-pill { animation: none; } /* triggered by JS */
+
+        /* ─── Shimmer on hero overlay ─── */
+        @keyframes heroShimmer {
+            0%   { background-position: -200% center; }
+            100% { background-position: 200% center; }
+        }
+        .hero-shimmer-line {
+            display: inline-block;
+            background: linear-gradient(90deg,
+                rgba(255,255,255,0.55) 0%,
+                rgba(255,255,255,1) 40%,
+                rgba(255,255,255,0.55) 100%);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: heroShimmer 4s linear infinite;
+        }
+
+        /* ─── Floating particle dots on hero ─── */
+        @keyframes floatDot {
+            0%, 100% { transform: translateY(0) scale(1); opacity: 0.35; }
+            50%       { transform: translateY(-18px) scale(1.15); opacity: 0.6; }
+        }
+        .hero-dot {
+            position: absolute;
+            border-radius: 50%;
+            background: var(--brand-light);
+            pointer-events: none;
+        }
+        .hero-dot:nth-child(1) { width:8px; height:8px; top:18%; right:22%; animation: floatDot 5s ease-in-out infinite 0s; }
+        .hero-dot:nth-child(2) { width:5px; height:5px; top:65%; right:15%; animation: floatDot 7s ease-in-out infinite 1.5s; }
+        .hero-dot:nth-child(3) { width:11px;height:11px;top:40%; right:35%; animation: floatDot 6s ease-in-out infinite 0.8s; }
+
+        /* ─── Contact card entrance ─── */
+        .contact-card {
+            transition: transform 0.35s ease, box-shadow 0.35s ease;
+        }
+        .contact-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 24px 48px -12px rgba(120,87,67,0.12);
+        }
+
+        /* ─── Smooth scroll ─── */
+        html { scroll-behavior: smooth; }
+
+        /* ─── Footer link hover slide ─── */
+        footer a {
+            position: relative;
+            display: inline-block;
+            transition: color 0.2s ease, transform 0.2s ease;
+        }
+        footer a:hover { transform: translateX(4px); }
+
+        /* ─── Touch device: disable hover transforms ─── */
+        @media (hover: none) {
+            .team-card:hover       { transform: none; box-shadow: none; }
+            .team-card:hover img   { transform: none; }
+            .contact-card:hover    { transform: none; box-shadow: none; }
+            .card-hover:hover      { transform: none; box-shadow: none; }
+            footer a:hover         { transform: none; }
+        }
+
+        /* ─── Reduce reveal distance on small screens ─── */
+        @media (max-width: 639px) {
+            .reveal              { transform: translateY(14px); }
+            .reveal.reveal-left  { transform: translateY(14px); }
+            .reveal.reveal-right { transform: translateY(14px); }
+        }
+
+        /* ─── Accessibility: respect reduced-motion ─── */
+        @media (prefers-reduced-motion: reduce) {
+            *,
+            .hero-badge, .hero-title, .hero-sub, .hero-ctas,
+            .whatsapp-pulse, .scroll-indicator,
+            .hero-shimmer-line, .hero-dot {
+                animation: none !important;
+                transition-duration: 0.01ms !important;
+            }
+            .reveal { opacity: 1 !important; transform: none !important; }
+        }
+    </style>
+</head>
+
+<body class="tail-container">
+    <!-- HEADER (sticky for ALL pages - copy this entire nav block to every HTML file) -->
+    <nav class="sticky-header bg-white border-b border-gray-100 shadow-sm z-50">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center gap-x-3">
+                    <!-- <img src="./assets/logo-dark.png" alt="Skinfit Aesthetics Logo" class="w-14 h-14 object-contain"> -->
+                    <img src="./assets/logo-dark-min.png" alt="Skinfit Aesthetics Logo" class="w-14 h-14 object-contain">
+                    <div class="logo-font text-3xl tracking-tight">
+                        <span class="text-brand-dark">Skinfit</span>
+                        <span class="text-gray-900">Aesthetics</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Menu -->
+                <div class="hidden lg:flex items-center gap-x-9 text-base font-medium text-gray-700">
+
+                    <!-- About -->
+                    <a href="index.html#about" class="hover:text-brand-dark flex items-center gap-x-1">
+                        About
+                    </a>
+
+                    <!-- Contact / Book -->
+                    <a href="index.html#contact" class="hover:text-brand-dark flex items-center gap-x-1">
+                        Contact us
+                    </a>
+
+                    <!-- Concerns Dropdown -->
+                    <div class="group relative">
+                        <a href="concerns.html" class="hover:text-brand-dark flex items-center gap-x-1">
+                            Concerns
+                            <i class="fa-solid fa-chevron-down text-xs ml-1"></i>
+                        </a>
+                        <!-- Dropdown Menu -->
+                        <div
+                            class="dropdown hidden group-hover:block absolute top-full left-0 pt-3 w-72 bg-white rounded-3xl shadow-2xl border border-gray-100 py-2 z-50">
+                            <div class="max-h-80 overflow-y-auto px-3">
+                                <a href="concerns.html#acne-pimples"
+                                    class="block px-5 py-3 hover:bg-brand-dark/10 hover:text-brand-dark rounded-2xl text-sm">Acne
+                                    / Pimples</a>
+                                <a href="concerns.html#acne-scar"
+                                    class="block px-5 py-3 hover:bg-brand-dark/10 hover:text-brand-dark rounded-2xl text-sm">Acne
+                                    Scar</a>
+                                <a href="concerns.html#pigmentation-glow"
+                                    class="block px-5 py-3 hover:bg-brand-dark/10 hover:text-brand-dark rounded-2xl text-sm">Pigmentation
+                                    / Glow</a>
+                                <a href="concerns.html#anti-ageing"
+                                    class="block px-5 py-3 hover:bg-brand-dark/10 hover:text-brand-dark rounded-2xl text-sm">Anti
+                                    Ageing</a>
+                                <a href="concerns.html#hair-loss"
+                                    class="block px-5 py-3 hover:bg-brand-dark/10 hover:text-brand-dark rounded-2xl text-sm">Hair
+                                    Loss</a>
+                                <a href="concerns.html#excessive-hair-growth"
+                                    class="block px-5 py-3 hover:bg-brand-dark/10 hover:text-brand-dark rounded-2xl text-sm">Excessive
+                                    Hair Growth</a>
+                                <a href="concerns.html#clinical-dermatology"
+                                    class="block px-5 py-3 hover:bg-brand-dark/10 hover:text-brand-dark rounded-2xl text-sm">Clinical
+                                    Dermatology</a>
+                                <a href="concerns.html#paediatric-geriatric"
+                                    class="block px-5 py-3 hover:bg-brand-dark/10 hover:text-brand-dark rounded-2xl text-sm">Paediatric
+                                    &amp; Geriatric Concerns</a>
+                                <a href="concerns.html#excessive-sweating"
+                                    class="block px-5 py-3 hover:bg-brand-dark/10 hover:text-brand-dark rounded-2xl text-sm">Excessive
+                                    Sweating</a>
+                                <a href="concerns.html#nail-disorders"
+                                    class="block px-5 py-3 hover:bg-brand-dark/10 hover:text-brand-dark rounded-2xl text-sm">Nail
+                                    Disorders</a>
+                                <a href="concerns.html#fungal-infection"
+                                    class="block px-5 py-3 hover:bg-brand-dark/10 hover:text-brand-dark rounded-2xl text-sm">Fungal
+                                    Infection</a>
+                                <a href="concerns.html#allergies"
+                                    class="block px-5 py-3 hover:bg-brand-dark/10 hover:text-brand-dark rounded-2xl text-sm">Allergies</a>
+                                <a href="concerns.html#dandruff"
+                                    class="block px-5 py-3 hover:bg-brand-dark/10 hover:text-brand-dark rounded-2xl text-sm">Dandruff</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Treatments Dropdown -->
+                    <div class="group relative">
+                        <a href="treatments.html" class="hover:text-brand-dark flex items-center gap-x-1">
+                            Treatments
+                            <i class="fa-solid fa-chevron-down text-xs ml-1"></i>
+                        </a>
+                        <!-- Dropdown Menu -->
+                        <div
+                            class="dropdown hidden group-hover:block absolute top-full left-0 pt-3 w-72 bg-white rounded-3xl shadow-2xl border border-gray-100 py-2 z-50">
+                            <div class="max-h-80 overflow-y-auto px-3 grid grid-cols-2 gap-x-2 text-sm">
+                                <a href="treatments.html#chemical-peels"
+                                    class="block px-5 py-3 hover:bg-brand-dark/10 hover:text-brand-dark rounded-2xl">Chemical
+                                    Peels</a>
+                                <a href="treatments.html#vampire-facial"
+                                    class="block px-5 py-3 hover:bg-brand-dark/10 hover:text-brand-dark rounded-2xl">Vampire
+                                    Facial</a>
+                                <a href="treatments.html#microneedling"
+                                    class="block px-5 py-3 hover:bg-brand-dark/10 hover:text-brand-dark rounded-2xl">Microneedling</a>
+                                <a href="treatments.html#hydrafacial"
+                                    class="block px-5 py-3 hover:bg-brand-dark/10 hover:text-brand-dark rounded-2xl">Hydrafacial</a>
+                                <a href="treatments.html#mole-removal"
+                                    class="block px-5 py-3 hover:bg-brand-dark/10 hover:text-brand-dark rounded-2xl">Mole
+                                    Removal</a>
+                                <a href="treatments.html#scar-correction"
+                                    class="block px-5 py-3 hover:bg-brand-dark/10 hover:text-brand-dark rounded-2xl">Scar
+                                    Correction</a>
+                                <a href="treatments.html#mesotherapy"
+                                    class="block px-5 py-3 hover:bg-brand-dark/10 hover:text-brand-dark rounded-2xl">Mesotherapy</a>
+                                <a href="treatments.html#exosomes"
+                                    class="block px-5 py-3 hover:bg-brand-dark/10 hover:text-brand-dark rounded-2xl">Exosomes</a>
+                                <a href="treatments.html#salmon-dna-pdrn"
+                                    class="block px-5 py-3 hover:bg-brand-dark/10 hover:text-brand-dark rounded-2xl">Salmon
+                                    DNA / PDRN</a>
+                                <a href="treatments.html#laser-hair-reduction"
+                                    class="block px-5 py-3 hover:bg-brand-dark/10 hover:text-brand-dark rounded-2xl">Laser
+                                    Hair Reduction</a>
+                                <a href="treatments.html#iv-drips"
+                                    class="block px-5 py-3 hover:bg-brand-dark/10 hover:text-brand-dark rounded-2xl">IV
+                                    Drips</a>
+                                <a href="treatments.html#prp"
+                                    class="block px-5 py-3 hover:bg-brand-dark/10 hover:text-brand-dark rounded-2xl">Platelet
+                                    Rich Plasma (PRP)</a>
+                                <a href="treatments.html#gfc"
+                                    class="block px-5 py-3 hover:bg-brand-dark/10 hover:text-brand-dark rounded-2xl">GFC
+                                    Hair Threads</a>
+                                <a href="treatments.html#dutasteride"
+                                    class="block px-5 py-3 hover:bg-brand-dark/10 hover:text-brand-dark rounded-2xl">Dutasteride</a>
+                                <a href="treatments.html#fat-reduction"
+                                    class="block px-5 py-3 hover:bg-brand-dark/10 hover:text-brand-dark rounded-2xl">Fat
+                                    Reduction</a>
+                                <a href="treatments.html#fillers"
+                                    class="block px-5 py-3 hover:bg-brand-dark/10 hover:text-brand-dark rounded-2xl">Fillers</a>
+                                <a href="treatments.html#botox"
+                                    class="block px-5 py-3 hover:bg-brand-dark/10 hover:text-brand-dark rounded-2xl">BOTOX</a>
+                                <a href="treatments.html#skin-boosters"
+                                    class="block px-5 py-3 hover:bg-brand-dark/10 hover:text-brand-dark rounded-2xl">Skin
+                                    Boosters</a>
+                                <a href="treatments.html#bridal-skincare"
+                                    class="block px-5 py-3 hover:bg-brand-dark/10 hover:text-brand-dark rounded-2xl">Bridal
+                                    Skincare</a>
+                                <a href="treatments.html#nonsurgical-threadlift"
+                                    class="block px-5 py-3 hover:bg-brand-dark/10 hover:text-brand-dark rounded-2xl">Nonsurgical
+                                    Threadlift / Facelift</a>
+                                <a href="treatments.html#hair-transplant"
+                                    class="block px-5 py-3 hover:bg-brand-dark/10 hover:text-brand-dark rounded-2xl">Hair
+                                    Transplant</a>
+                                <a href="treatments.html#ear-piercing"
+                                    class="block px-5 py-3 hover:bg-brand-dark/10 hover:text-brand-dark rounded-2xl">Ear
+                                    Piercing</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CTA Buttons -->
+                <div class="hidden lg:flex items-center gap-x-4">
+                    <a href="https://api.whatsapp.com/send?phone=917276825422&text=Hello%20Skinfit%20Aesthetics%2C%20I%20would%20like%20to%20book%20an%20appointment"
+                        target="_blank"
+                        class="whatsapp-pulse flex items-center justify-center gap-x-3 bg-[#25D366] text-white h-14 rounded-3xl text-sm font-medium whatsapp-button">
+                        <i class="fa-brands fa-whatsapp text-2xl"></i>
+                        BOOK VIA WHATSAPP
+                    </a>
+                    <a href="index.html#contact"
+                        class="border border-brand-dark hover:bg-brand-dark hover:text-white text-brand-dark px-7 py-3 rounded-3xl font-medium text-sm">
+                        Book Appointment
+                    </a>
+                </div>
+
+                <!-- Mobile Hamburger -->
+                <button onclick="toggleMobileMenu()"
+                    class="lg:hidden w-11 h-11 flex items-center justify-center text-2xl text-gray-700 hover:text-brand-dark">
+                    <i class="fa-solid fa-bars" id="hamburger-icon"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t px-6 py-6 shadow-xl">
+            <div class="flex flex-col gap-y-6 text-base">
+                <a href="index.html#about" onclick="toggleMobileMenu()" class="font-medium">About</a>
+                <a href="index.html#contact" onclick="toggleMobileMenu()" class="font-medium">Contact us / Book
+                    Appointment</a>
+
+                <div class="border-t pt-4">
+                    <p class="text-xs uppercase tracking-widest text-gray-400 mb-3">Concerns</p>
+                    <div class="grid grid-cols-2 gap-2 text-sm">
+                        <a href="concerns.html#acne-pimples" onclick="toggleMobileMenu()"
+                            class="py-2 px-4 hover:bg-gray-100 rounded-2xl">Acne / Pimples</a>
+                        <a href="concerns.html#acne-scar" onclick="toggleMobileMenu()"
+                            class="py-2 px-4 hover:bg-gray-100 rounded-2xl">Acne Scar</a>
+                        <a href="concerns.html#pigmentation-glow" onclick="toggleMobileMenu()"
+                            class="py-2 px-4 hover:bg-gray-100 rounded-2xl">Pigmentation / Glow</a>
+                        <a href="concerns.html#anti-ageing" onclick="toggleMobileMenu()"
+                            class="py-2 px-4 hover:bg-gray-100 rounded-2xl">Anti Ageing</a>
+                        <a href="concerns.html#hair-loss" onclick="toggleMobileMenu()"
+                            class="py-2 px-4 hover:bg-gray-100 rounded-2xl">Hair Loss</a>
+                        <a href="concerns.html#excessive-hair-growth" onclick="toggleMobileMenu()"
+                            class="py-2 px-4 hover:bg-gray-100 rounded-2xl">Excessive Hair Growth</a>
+                        <!-- ... remaining concerns abbreviated for brevity but you can copy full list from desktop dropdown -->
+                        <a href="concerns.html" onclick="toggleMobileMenu()"
+                            class="py-2 px-4 hover:bg-gray-100 rounded-2xl text-brand-dark font-medium">View all
+                            concerns
+                            →</a>
+                    </div>
+                </div>
+
+                <div class="border-t pt-4">
+                    <p class="text-xs uppercase tracking-widest text-gray-400 mb-3">Treatments</p>
+                    <div class="grid grid-cols-2 gap-2 text-sm">
+                        <a href="treatments.html#chemical-peels" onclick="toggleMobileMenu()"
+                            class="py-2 px-4 hover:bg-gray-100 rounded-2xl">Chemical Peels</a>
+                        <a href="treatments.html#botox" onclick="toggleMobileMenu()"
+                            class="py-2 px-4 hover:bg-gray-100 rounded-2xl">BOTOX</a>
+                        <!-- ... abbreviated - copy full list from desktop dropdown -->
+                        <a href="treatments.html" onclick="toggleMobileMenu()"
+                            class="py-2 px-4 hover:bg-gray-100 rounded-2xl text-brand-dark font-medium">View all
+                            treatments →</a>
+                    </div>
+                </div>
+
+                <div class="pt-4 border-t flex flex-col gap-y-3">
+                    <a href="https://wa.me/917276825422?text=Hello%20Skinfit%20Aesthetics%2C%20I%20would%20like%20to%20book%20an%20appointment"
+                        target="_blank" onclick="toggleMobileMenu()"
+                        class="flex justify-center items-center gap-x-2 bg-brand-dark text-white py-4 rounded-3xl font-medium">
+                        <i class="fa-brands fa-whatsapp text-xl"></i>
+                        Book via WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION - HOME ONLY -->
+    <header class="hero-bg home-bg h-screen flex items-center text-white relative">
+        <!-- Floating decorative dots (clipped to hero only) -->
+        <div class="absolute inset-0 overflow-hidden pointer-events-none">
+            <div class="hero-dot"></div>
+            <div class="hero-dot"></div>
+            <div class="hero-dot"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 grid lg:grid-cols-12 gap-12 items-center h-full">
+            <div class="lg:col-span-6">
+                <div class="hero-badge inline-flex items-center bg-white/10 backdrop-blur-md text-white text-sm font-bold px-5 h-9 rounded-3xl mb-6 sm:mb-8">
+                    <span class="w-2 h-2 bg-emerald-500 rounded-full mr-2 animate-pulse"></span>
+                    NOW OPEN IN PUNE
+                </div>
+                <h1 class="hero-title text-4xl sm:text-5xl lg:text-7xl font-semibold leading-tight sm:leading-none logo-font tracking-tighter">
+                    <span class="hero-shimmer-line">Healthy skin.</span><br>Confident you.
+                </h1>
+                <p class="hero-sub mt-4 sm:mt-6 text-base sm:text-xl max-w-lg text-white/90">
+                    Expert dermatologist in Kharadi, Pune — advanced aesthetics &amp; personalized skin and hair care at Skinfit Aesthetics.
+                </p>
+                <div class="hero-ctas flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4 mt-8 sm:mt-10">
+                    <a href="index.html#contact"
+                        class="bg-white text-gray-900 px-7 sm:px-10 py-4 sm:py-5 rounded-3xl font-semibold flex items-center justify-center gap-x-3 hover:scale-105 text-base sm:text-lg transition-transform duration-200">
+                        <i class="fa-solid fa-calendar-check"></i>
+                        Book Appointment
+                    </a>
+                    <a href="https://wa.me/917276825422?text=Hello%20Skinfit%20Aesthetics%2C%20I%20would%20like%20to%20book%20an%20appointment"
+                        target="_blank"
+                        class="whatsapp-pulse border-2 border-white text-white px-7 sm:px-10 py-4 sm:py-5 rounded-3xl font-bold flex items-center justify-center gap-x-3 hover:bg-white/10">
+                        <i class="fa-brands fa-whatsapp text-2xl"></i>
+                        WhatsApp Us
+                    </a>
+                </div>
+                <!-- <div class="mt-12 flex items-center gap-x-8 text-sm">
+                    <div class="flex -space-x-4">
+                        <div
+                            class="w-8 h-8 bg-white/30 backdrop-blur rounded-2xl ring-2 ring-white flex items-center justify-center text-xs">
+                            4.98</div>
+                    </div>
+                    <!-- <div>
+                        <p class="font-medium">Rated 4.98 by 387+ happy clients in Pune</p>
+                    </div> -->
+            </div>
+        </div>
+
+        <!-- Hero visual placeholder -->
+        <div class="hidden lg:flex lg:col-span-5 justify-end">
+            <div class="relative">
+                <!-- <div
+                        class="absolute -top-8 -left-8 bg-white text-brand-dark px-6 py-3 rounded-3xl shadow-xl flex items-center gap-x-3 text-sm font-medium">
+                        <i class="fa-solid fa-medal"></i>
+                        10+ years experience
+                    </div> -->
+                <!-- <img src="./assets/hero-doctor.jpg" alt="Dr. at Skinfit Aesthetics"
+                        class="w-96 h-auto rounded-3xl shadow-2xl rotate-[-4deg]"> -->
+                <!-- <div
+                        class="absolute -bottom-6 -right-6 bg-white rounded-3xl px-5 py-4 shadow-xl text-gray-900 text-sm flex items-center gap-x-2">
+                        <i class="fa-solid fa-check-circle text-emerald-500"></i>
+                        <div>
+                            <p class="font-semibold">Next available slot</p>
+                            <p class="text-xs text-gray-500">Tomorrow 11:00 AM</p>
+                        </div>
+                    </div> -->
+            </div>
+        </div>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center text-white/70 text-xs tracking-widest scroll-indicator">
+            <p>SCROLL</p>
+            <i class="fa-solid fa-chevron-down mt-2"></i>
+        </div>
+    </header>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="py-14 lg:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+
+                <!-- Left Text -->
+                <div class="lg:col-span-7">
+                    <div class="max-w-lg">
+                        <span class="reveal reveal-left delay-100 inline-block px-4 py-1.5 bg-brand-dark/10 text-brand-dark text-sm font-semibold rounded-3xl">OUR STORY</span>
+                        <h2 class="reveal reveal-left delay-200 text-4xl sm:text-5xl lg:text-6xl font-semibold logo-font tracking-tighter mt-5 leading-tight lg:leading-none">
+                            Expert care.<br>Personalized results.
+                        </h2>
+                        <p class="reveal delay-300 mt-6 text-base lg:text-lg text-gray-600 leading-relaxed">
+                            Skinfit Aesthetics was founded in Pune with a simple mission: to deliver world-class
+                            dermatological and aesthetic treatments in a warm, modern environment.
+                        </p>
+                        <p class="reveal delay-400 mt-4 text-base lg:text-lg text-gray-600 leading-relaxed">
+                            Our team of board-certified dermatologists combines cutting-edge technology with
+                            compassionate care to treat everything from everyday skin concerns to advanced aesthetic
+                            transformations.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Right: team images -->
+                <div class="lg:col-span-5 space-y-6 lg:space-y-10">
+                    <div class="team-card reveal reveal-right delay-100 flex gap-4 sm:gap-6 items-start">
+                        <img src="./assets/team1.jpg" alt="Dr. Varun Shrivastava"
+                            class="w-24 h-24 sm:w-32 sm:h-32 lg:w-36 lg:h-36 object-cover rounded-3xl shadow-md flex-shrink-0">
+                        <div class="flex flex-col justify-center">
+                            <h4 class="font-semibold text-base sm:text-lg">Dr. Varun Shrivastava</h4>
+                            <p class="text-sm text-gray-500 mt-1">Lead Dermatologist &amp; Co-Founder</p>
+                            <p class="text-xs text-gray-400 mt-1">MBBS, MD Dermatology</p>
+                        </div>
+                    </div>
+                    <div class="team-card reveal reveal-right delay-300 flex gap-4 sm:gap-6 items-start">
+                        <img src="./assets/team3.jpg" alt="Dr. Urvashi Shrivastava"
+                            class="w-24 h-24 sm:w-32 sm:h-32 lg:w-36 lg:h-36 object-cover rounded-3xl shadow-md flex-shrink-0">
+                        <div class="flex flex-col justify-center">
+                            <h4 class="font-semibold text-base sm:text-lg">Dr. Urvashi Shrivastava</h4>
+                            <p class="text-sm text-gray-500 mt-1">Gynecologist &amp; Co-Founder</p>
+                            <p class="text-xs text-gray-400 mt-1">MBBS, DGO FICMCH</p>
+                            <p class="text-xs text-gray-400 mt-1">Obstetrics and Gynaecology</p>
+                        </div>
+                    </div>
+                    <div class="team-card reveal reveal-right delay-500 flex gap-4 sm:gap-6 items-start">
+                        <img src="./assets/team4.jpg" alt="Dr. Sanjay Shrivastava"
+                            class="w-24 h-24 sm:w-32 sm:h-32 lg:w-36 lg:h-36 object-cover rounded-3xl shadow-md flex-shrink-0">
+                        <div class="flex flex-col justify-center">
+                            <h4 class="font-semibold text-base sm:text-lg">Dr. Sanjay Shrivastava</h4>
+                            <p class="text-sm text-gray-500 mt-1">Pediatrician &amp; Co-Founder</p>
+                            <p class="text-xs text-gray-400 mt-1">MBBS, MD Paediatrics</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT / BOOK APPOINTMENT SECTION -->
+    <section id="contact" class="py-14 lg:py-24 bg-[#F9F5F0]">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-8 lg:gap-16">
+
+                <!-- Left placard + info -->
+                <div class="lg:col-span-5 flex flex-col">
+                    <div class="contact-card reveal reveal-left bg-white rounded-3xl shadow-xl p-6 sm:p-8 lg:p-10 flex flex-col flex-1">
+                        <h2 class="text-3xl sm:text-4xl font-semibold logo-font">Get in touch</h2>
+                        <p class="text-gray-600 mt-2 sm:mt-3 text-sm sm:text-base">We'd love to hear from you. Book your consultation today.</p>
+
+                        <div class="mt-6 sm:mt-10 space-y-5 sm:space-y-6 flex-1">
+                            <!-- Phone -->
+                            <div class="flex items-start gap-x-3 sm:gap-x-4">
+                                <i class="fa-solid fa-phone text-brand-dark text-xl sm:text-2xl mt-1 flex-shrink-0"></i>
+                                <div>
+                                    <p class="font-medium text-sm sm:text-base">Call or WhatsApp</p>
+                                    <a href="tel:+917276825422" class="text-xl sm:text-2xl font-semibold text-gray-800">+91 7276825422</a>
+                                </div>
+                            </div>
+
+                            <!-- Address -->
+                            <div class="flex items-start gap-x-3 sm:gap-x-4">
+                                <i class="fa-solid fa-location-dot text-brand-dark text-xl sm:text-2xl mt-1 flex-shrink-0"></i>
+                                <div>
+                                    <p class="font-medium text-sm sm:text-base">Clinic Address</p>
+                                    <p class="text-gray-700 text-sm sm:text-base">Krish Heights Thitewasti main road, Mundhwa - Kharadi Rd,
+                                        opp. H P Petrol Pump, near Bank of Baroda, Kharadi, Pune, Maharashtra 411014</p>
+                                </div>
+                            </div>
+
+                            <!-- Timings -->
+                            <div class="flex items-start gap-x-3 sm:gap-x-4">
+                                <i class="fa-solid fa-clock text-brand-dark text-xl sm:text-2xl mt-1 flex-shrink-0"></i>
+                                <div>
+                                    <p class="font-medium text-sm sm:text-base">Clinic Timings</p>
+                                    <p class="text-gray-700 text-sm sm:text-base">Fri–Wed: 4:00 PM – 9:00 PM<br>Thursday: 9:00 AM – 9:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Social -->
+                        <div class="mt-6 sm:mt-8 pt-6 sm:pt-8 border-t flex items-center gap-x-5 sm:gap-x-6">
+                            <a href="https://www.instagram.com/dr.varun_skinfit/" target="_blank"
+                                class="text-3xl hover:text-brand-dark min-w-[44px] min-h-[44px] flex items-center"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.instagram.com/skinfit_aesthetics_clinic/" target="_blank"
+                                class="text-3xl hover:text-brand-dark min-w-[44px] min-h-[44px] flex items-center"><i class="fa-brands fa-instagram"></i></a>
+                            <span class="text-xs sm:text-sm text-gray-400 ml-auto">Follow us for skincare tips</span>
+                        </div>
+
+                        <!-- WhatsApp CTA -->
+                        <a href="https://wa.me/917276825422?text=Hello%20Skinfit%20Aesthetics%2C%20I%20would%20like%20to%20book%20an%20appointment"
+                            target="_blank"
+                            class="whatsapp-pulse mt-4 sm:mt-6 flex items-center justify-center gap-x-2 sm:gap-x-3 bg-[#25D366] text-white px-4 sm:px-6 py-4 rounded-3xl text-sm sm:text-base font-medium w-full leading-tight">
+                            <i class="fa-brands fa-whatsapp text-xl sm:text-2xl flex-shrink-0"></i>
+                            <span>INSTANT BOOKING VIA WHATSAPP</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right: Google Maps + Form -->
+                <div class="lg:col-span-7 flex flex-col">
+                    <div class="contact-card reveal reveal-right delay-200 bg-white rounded-3xl p-6 sm:p-8 shadow-xl flex flex-col flex-1">
+                        <!-- Google Maps Embed - REPLACE src with your own embed code -->
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.642221448244!2d73.93107727703537!3d18.54506322346487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c1476868eba1%3A0xb334b0d2be53219d!2sSkinfit%20aesthetics!5e0!3m2!1sen!2sus!4v1776608858318!5m2!1sen!2sus"
+                            width="100%" style="border:0; border-radius: 20px; flex: 1; min-height: 220px;"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+
+                        <!-- Contact Form -->
+                        <form id="contact-form" class="mt-6 sm:mt-10 grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-600 mb-2">Full Name</label>
+                                <input type="text" id="name" required
+                                    class="w-full px-4 sm:px-5 py-3 sm:py-4 rounded-3xl border border-gray-200 focus:border-brand-dark outline-none text-base">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-600 mb-2">Phone Number</label>
+                                <input type="tel" id="phone" required
+                                    class="w-full px-4 sm:px-5 py-3 sm:py-4 rounded-3xl border border-gray-200 focus:border-brand-dark outline-none text-base">
+                            </div>
+                            <div class="md:col-span-2">
+                                <label class="block text-sm font-medium text-gray-600 mb-2">Email Address</label>
+                                <input type="email" id="email" required
+                                    class="w-full px-4 sm:px-5 py-3 sm:py-4 rounded-3xl border border-gray-200 focus:border-brand-dark outline-none text-base">
+                            </div>
+                            <div class="md:col-span-2">
+                                <label class="block text-sm font-medium text-gray-600 mb-2">Tell us about your concern</label>
+                                <textarea id="message" rows="4" required
+                                    class="w-full px-4 sm:px-5 py-3 sm:py-4 rounded-3xl border border-gray-200 focus:border-brand-dark outline-none resize-none text-base"></textarea>
+                            </div>
+
+                            <button type="submit"
+                                class="md:col-span-2 bg-brand-dark hover:bg-[#C19A6B] text-white h-12 sm:h-14 text-base sm:text-lg font-medium rounded-3xl flex items-center justify-center gap-x-2">
+                                <span>SEND MESSAGE</span>
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                        </form>
+
+                        <p id="form-success" class="hidden mt-4 text-center text-emerald-600 font-medium">✅ Thank you!
+                            Your message has been sent. We will reply within 2 hours.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-12 gap-x-8 gap-y-10">
+
+                <!-- Brand — full width on mobile -->
+                <div class="col-span-2 md:col-span-5">
+                    <div class="flex items-center gap-x-2 text-3xl logo-font">
+                        <span class="text-brand-dark">Skinfit</span>
+                        <span>Aesthetics</span>
+                    </div>
+                    <p class="mt-4 text-gray-400 max-w-xs text-sm">Transforming skin health in Pune with science-backed,
+                        compassionate care.</p>
+                    <!-- Social icons on mobile -->
+                    <div class="flex gap-x-5 text-2xl mt-6 md:hidden">
+                        <a href="https://www.instagram.com/dr.varun_skinfit/" target="_blank"
+                            class="text-3xl hover:text-brand-dark"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/skinfit_aesthetics_clinic/" target="_blank"
+                            class="text-3xl hover:text-brand-dark"><i class="fa-brands fa-instagram"></i></a>
+                        <span class="text-sm text-gray-400 ml-auto">Follow us for skincare tips</span>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-span-1 md:col-span-2">
+                    <p class="uppercase text-xs tracking-widest mb-4 text-gray-400">Quick Links</p>
+                    <a href="concerns.html" class="block py-2 text-gray-300 hover:text-white text-sm">Concerns</a>
+                    <a href="treatments.html" class="block py-2 text-gray-300 hover:text-white text-sm">Treatments</a>
+                    <a href="index.html#about" class="block py-2 text-gray-300 hover:text-white text-sm">About Us</a>
+                </div>
+
+                <!-- Legal -->
+                <div class="col-span-1 md:col-span-2">
+                    <p class="uppercase text-xs tracking-widest mb-4 text-gray-400">Legal</p>
+                    <a href="#" class="block py-2 text-gray-300 hover:text-white text-sm">Privacy Policy</a>
+                    <a href="#" class="block py-2 text-gray-300 hover:text-white text-sm">Terms of Service</a>
+                </div>
+
+                <!-- Follow us — desktop only -->
+                <div class="hidden md:block md:col-span-3">
+                    <p class="text-sm mb-4">Follow us for skincare tips</p>
+                    <div class="flex gap-x-5 text-3xl">
+                        <a href="https://www.instagram.com/dr.varun_skinfit/" target="_blank"
+                            class="text-3xl hover:text-brand-dark"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/skinfit_aesthetics_clinic/" target="_blank"
+                            class="text-3xl hover:text-brand-dark"><i class="fa-brands fa-instagram"></i></a>
+                        <!-- <span class="text-sm text-gray-400 ml-auto">Follow us for skincare tips</span> -->
+                    </div>
+                    <p class="text-xs text-gray-400 mt-8">Made with ❤️ for beautiful skin</p>
+                </div>
+
+            </div>
+
+            <!-- Bottom bar -->
+            <!-- <div
+                class="mt-12 pt-8 border-t border-gray-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-500">
+                <p>© 2026 Skinfit Aesthetics. All Rights Reserved.</p>
+                <p class="hidden sm:block">Made with ❤️ for beautiful skin</p>
+            </div> -->
+        </div>
+    </footer>
+
+    <script>
+        // Tailwind config
+        function initializeTailwind() {
+            tailwind.config = {
+                content: [],
+                theme: {
+                    extend: {
+                        colors: {
+                            brand: '#CFAA89',
+                            'brand-dark': '#785743',
+                            'brand-soft': '#A7836A'
+                        }
+                    }
+                }
+            }
+        }
+
+        // Mobile menu toggle
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu')
+            const icon = document.getElementById('hamburger-icon')
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden')
+                icon.classList.replace('fa-bars', 'fa-xmark')
+            } else {
+                menu.classList.add('hidden')
+                icon.classList.replace('fa-xmark', 'fa-bars')
+            }
+        }
+
+        // Contact form handler
+        const WORKER_URL = 'contact.php';
+
+        function handleContactForm() {
+            const form = document.getElementById('contact-form')
+            const successMsg = document.getElementById('form-success')
+            const submitBtn = form ? form.querySelector('button[type="submit"]') : null
+
+            if (!form) return
+
+            form.addEventListener('submit', async function (e) {
+                e.preventDefault()
+
+                // Disable button while sending
+                if (submitBtn) {
+                    submitBtn.disabled = true
+                    submitBtn.innerHTML = '<span>SENDING...</span> <i class="fa-solid fa-spinner fa-spin"></i>'
+                }
+
+                const payload = {
+                    name: document.getElementById('name').value.trim(),
+                    phone: document.getElementById('phone').value.trim(),
+                    email: document.getElementById('email').value.trim(),
+                    message: document.getElementById('message').value.trim()
+                }
+
+                try {
+                    const res = await fetch(WORKER_URL, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(payload)
+                    })
+
+                    if (!res.ok) throw new Error('Server error')
+
+                    // Show success
+                    form.classList.add('hidden')
+                    successMsg.classList.remove('hidden')
+
+                    // Reset form after 4.5 seconds
+                    setTimeout(() => {
+                        form.reset()
+                        form.classList.remove('hidden')
+                        successMsg.classList.add('hidden')
+                        if (submitBtn) {
+                            submitBtn.disabled = false
+                            submitBtn.innerHTML = '<span>SEND MESSAGE</span> <i class="fa-solid fa-paper-plane"></i>'
+                        }
+                    }, 4500)
+
+                } catch (err) {
+                    console.error('Form submission error:', err)
+                    alert('Sorry, something went wrong. Please try again or contact us directly.')
+                    if (submitBtn) {
+                        submitBtn.disabled = false
+                        submitBtn.innerHTML = '<span>SEND MESSAGE</span> <i class="fa-solid fa-paper-plane"></i>'
+                    }
+                }
+            })
+        }
+
+        // Initialize everything on home page
+        function initHome() {
+            initializeTailwind()
+            handleContactForm()
+            console.log('%c✅ Skinfit Aesthetics home page initialized successfully', 'color:#785743; font-size:13px')
+        }
+
+        const WHATSAPP_NUMBER = "917276825422";
+        const WHATSAPP_MESSAGE = "Hello Skinfit Aesthetics, I would like to book an appointment.";
+
+        function getWhatsAppLink() {
+            return `https://api.whatsapp.com/send?phone=${WHATSAPP_NUMBER}&text=${encodeURIComponent(WHATSAPP_MESSAGE)}`;
+        }
+
+        // Run when DOM is ready
+        document.addEventListener('DOMContentLoaded', initHome)
+
+        // ─── Scroll-reveal via IntersectionObserver ───
+        document.addEventListener('DOMContentLoaded', () => {
+            const revealEls = document.querySelectorAll('.reveal')
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible')
+                        observer.unobserve(entry.target)
+                    }
+                })
+            }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' })
+            revealEls.forEach(el => observer.observe(el))
+        })
+
+        // ─── Subtle parallax on hero background ───
+        document.addEventListener('DOMContentLoaded', () => {
+            const hero = document.querySelector('header.hero-bg')
+            if (!hero) return
+            window.addEventListener('scroll', () => {
+                const scrolled = window.scrollY
+                if (scrolled < window.innerHeight * 1.5) {
+                    hero.style.backgroundPositionY = `calc(center + ${scrolled * 0.25}px)`
+                }
+            }, { passive: true })
+        })
+    </script>
+</body>
+
+</html>
