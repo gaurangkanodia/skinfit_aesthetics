@@ -7,8 +7,10 @@
 
     <!-- Primary SEO -->
     <title>Skinfit Aesthetics | Dermatologist in Kharadi, Pune | Skin, Hair & Laser Clinic</title>
-    <meta name="description" content="Skinfit Aesthetics is a trusted dermatology and aesthetic clinic in Kharadi, Pune. Expert treatments for acne, pigmentation, hair loss, laser, HydraFacial & more. Book today.">
-    <meta name="keywords" content="dermatologist in Pune, skin clinic Kharadi, acne treatment Pune, hair loss treatment Pune, laser hair removal Pune, HydraFacial Pune, aesthetic clinic Pune, Skinfit Aesthetics">
+    <meta name="description"
+        content="Skinfit Aesthetics is a trusted dermatology and aesthetic clinic in Kharadi, Pune. Expert treatments for acne, pigmentation, hair loss, laser, HydraFacial & more. Book today.">
+    <meta name="keywords"
+        content="dermatologist in Pune, skin clinic Kharadi, acne treatment Pune, hair loss treatment Pune, laser hair removal Pune, HydraFacial Pune, aesthetic clinic Pune, Skinfit Aesthetics">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://skinfitaesthetics.in/">
 
@@ -16,7 +18,8 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://skinfitaesthetics.in/">
     <meta property="og:title" content="Skinfit Aesthetics | Dermatologist in Kharadi, Pune">
-    <meta property="og:description" content="Expert skin, hair & aesthetic care in Kharadi, Pune. Treatments for acne, pigmentation, hair loss, laser & more. Book your consultation today.">
+    <meta property="og:description"
+        content="Expert skin, hair & aesthetic care in Kharadi, Pune. Treatments for acne, pigmentation, hair loss, laser & more. Book your consultation today.">
     <meta property="og:image" content="https://skinfitaesthetics.in/assets/og-image.jpg">
     <meta property="og:locale" content="en_IN">
     <meta property="og:site_name" content="Skinfit Aesthetics">
@@ -24,11 +27,12 @@
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Skinfit Aesthetics | Dermatologist in Kharadi, Pune">
-    <meta name="twitter:description" content="Expert skin, hair & aesthetic care in Kharadi, Pune. Book your consultation today.">
+    <meta name="twitter:description"
+        content="Expert skin, hair & aesthetic care in Kharadi, Pune. Book your consultation today.">
     <meta name="twitter:image" content="https://skinfitaesthetics.in/assets/og-image.jpg">
 
     <!-- Local Business Structured Data -->
-    <script type="application/ld+json">
+    <script type="application/ld+json" id="clinic-structured-data">
     {
       "@context": "https://schema.org",
       "@type": "Dermatology",
@@ -65,10 +69,7 @@
           "closes": "21:00"
         }
       ],
-      "sameAs": [
-        "https://www.instagram.com/dr.varun_skinfit/",
-        "https://www.instagram.com/skinfit_aesthetics_clinic/"
-      ],
+      "sameAs": [],
       "medicalSpecialty": "Dermatology",
       "hasMap": "https://maps.google.com/?cid=12709734892921299357"
     }
@@ -157,90 +158,174 @@
             opacity: 0;
             transform: translateY(32px);
             transition: opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1),
-                        transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+                transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
         }
+
         .reveal.reveal-left {
             transform: translateX(-36px);
         }
+
         .reveal.reveal-right {
             transform: translateX(36px);
         }
+
         .reveal.reveal-scale {
             transform: scale(0.94);
         }
+
         .reveal.visible {
             opacity: 1 !important;
             transform: translate(0) scale(1) !important;
         }
 
         /* Stagger delays */
-        .delay-100 { transition-delay: 0.1s; }
-        .delay-200 { transition-delay: 0.2s; }
-        .delay-300 { transition-delay: 0.3s; }
-        .delay-400 { transition-delay: 0.4s; }
-        .delay-500 { transition-delay: 0.5s; }
-        .delay-600 { transition-delay: 0.6s; }
+        .delay-100 {
+            transition-delay: 0.1s;
+        }
+
+        .delay-200 {
+            transition-delay: 0.2s;
+        }
+
+        .delay-300 {
+            transition-delay: 0.3s;
+        }
+
+        .delay-400 {
+            transition-delay: 0.4s;
+        }
+
+        .delay-500 {
+            transition-delay: 0.5s;
+        }
+
+        .delay-600 {
+            transition-delay: 0.6s;
+        }
 
         /* ─── Hero section entrance ─── */
         @keyframes heroFadeUp {
-            from { opacity: 0; transform: translateY(40px); }
-            to   { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
+
         @keyframes heroBadge {
-            from { opacity: 0; transform: translateY(-16px) scale(0.95); }
-            to   { opacity: 1; transform: translateY(0) scale(1); }
+            from {
+                opacity: 0;
+                transform: translateY(-16px) scale(0.95);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
         }
-        .hero-badge  { animation: heroBadge  0.7s cubic-bezier(0.34,1.56,0.64,1) 0.2s both; }
-        .hero-title  { animation: heroFadeUp 0.8s cubic-bezier(0.4, 0, 0.2, 1)   0.45s both; }
-        .hero-sub    { animation: heroFadeUp 0.8s cubic-bezier(0.4, 0, 0.2, 1)   0.65s both; }
-        .hero-ctas   { animation: heroFadeUp 0.8s cubic-bezier(0.4, 0, 0.2, 1)   0.85s both; }
+
+        .hero-badge {
+            animation: heroBadge 0.7s cubic-bezier(0.34, 1.56, 0.64, 1) 0.2s both;
+        }
+
+        .hero-title {
+            animation: heroFadeUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.45s both;
+        }
+
+        .hero-sub {
+            animation: heroFadeUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.65s both;
+        }
+
+        .hero-ctas {
+            animation: heroFadeUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.85s both;
+        }
 
         /* ─── Nav entrance ─── */
         @keyframes navSlideDown {
-            from { opacity: 0; transform: translateY(-100%); }
-            to   { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(-100%);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
+
         /* Nav animation removed — it creates a stacking context that traps dropdowns behind the hero */
         nav.sticky-header {
             position: sticky;
             top: 0;
             z-index: 1000;
         }
+
         /* Ensure dropdowns always sit above everything */
-        nav .dropdown, nav [class*="group-hover"] {
+        nav .dropdown,
+        nav [class*="group-hover"] {
             z-index: 1001 !important;
         }
 
         /* ─── Scroll indicator bounce ─── */
         @keyframes scrollBounce {
-            0%, 100% { transform: translateY(0); opacity: 0.7; }
-            50%       { transform: translateY(8px); opacity: 1; }
+
+            0%,
+            100% {
+                transform: translateY(0);
+                opacity: 0.7;
+            }
+
+            50% {
+                transform: translateY(8px);
+                opacity: 1;
+            }
         }
-        .scroll-indicator { animation: scrollBounce 1.8s ease-in-out infinite; }
+
+        .scroll-indicator {
+            animation: scrollBounce 1.8s ease-in-out infinite;
+        }
 
         /* ─── WhatsApp pulse glow ─── */
         @keyframes wpPulse {
-            0%   { box-shadow: 0 0 0 0 rgba(37,211,102,0.5); }
-            70%  { box-shadow: 0 0 0 12px rgba(37,211,102,0); }
-            100% { box-shadow: 0 0 0 0 rgba(37,211,102,0); }
+            0% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
+            }
+
+            70% {
+                box-shadow: 0 0 0 12px rgba(37, 211, 102, 0);
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+            }
         }
-        .whatsapp-pulse { animation: wpPulse 2.2s ease-out infinite; }
+
+        .whatsapp-pulse {
+            animation: wpPulse 2.2s ease-out infinite;
+        }
 
         /* ─── Team card hover ─── */
         .team-card {
             transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1),
-                        box-shadow 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+                box-shadow 0.35s cubic-bezier(0.4, 0, 0.2, 1);
             border-radius: 1.5rem;
             padding: 1rem;
             margin: -1rem;
         }
+
         .team-card:hover {
             transform: translateY(-6px);
-            box-shadow: 0 20px 40px -10px rgba(120,87,67,0.15);
+            box-shadow: 0 20px 40px -10px rgba(120, 87, 67, 0.15);
         }
+
         .team-card img {
             transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         }
+
         .team-card:hover img {
             transform: scale(1.04);
         }
@@ -249,36 +334,58 @@
         nav a:not(.flex):not([class*="bg-"]):not([class*="border"]) {
             position: relative;
         }
+
         nav a:not(.flex):not([class*="bg-"]):not([class*="border"])::after {
             content: '';
             position: absolute;
-            bottom: -2px; left: 0;
-            width: 0; height: 2px;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
             background: var(--brand-dark);
             transition: width 0.25s ease;
         }
+
         nav a:not(.flex):not([class*="bg-"]):not([class*="border"]):hover::after {
             width: 100%;
         }
 
         /* ─── Section label pill pop ─── */
         @keyframes pillPop {
-            from { opacity: 0; transform: scale(0.85) translateY(8px); }
-            to   { opacity: 1; transform: scale(1) translateY(0); }
+            from {
+                opacity: 0;
+                transform: scale(0.85) translateY(8px);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1) translateY(0);
+            }
         }
-        .section-pill { animation: none; } /* triggered by JS */
+
+        .section-pill {
+            animation: none;
+        }
+
+        /* triggered by JS */
 
         /* ─── Shimmer on hero overlay ─── */
         @keyframes heroShimmer {
-            0%   { background-position: -200% center; }
-            100% { background-position: 200% center; }
+            0% {
+                background-position: -200% center;
+            }
+
+            100% {
+                background-position: 200% center;
+            }
         }
+
         .hero-shimmer-line {
             display: inline-block;
             background: linear-gradient(90deg,
-                rgba(255,255,255,0.55) 0%,
-                rgba(255,255,255,1) 40%,
-                rgba(255,255,255,0.55) 100%);
+                    rgba(255, 255, 255, 0.55) 0%,
+                    rgba(255, 255, 255, 1) 40%,
+                    rgba(255, 255, 255, 0.55) 100%);
             background-size: 200% auto;
             -webkit-background-clip: text;
             background-clip: text;
@@ -288,30 +395,64 @@
 
         /* ─── Floating particle dots on hero ─── */
         @keyframes floatDot {
-            0%, 100% { transform: translateY(0) scale(1); opacity: 0.35; }
-            50%       { transform: translateY(-18px) scale(1.15); opacity: 0.6; }
+
+            0%,
+            100% {
+                transform: translateY(0) scale(1);
+                opacity: 0.35;
+            }
+
+            50% {
+                transform: translateY(-18px) scale(1.15);
+                opacity: 0.6;
+            }
         }
+
         .hero-dot {
             position: absolute;
             border-radius: 50%;
             background: var(--brand-light);
             pointer-events: none;
         }
-        .hero-dot:nth-child(1) { width:8px; height:8px; top:18%; right:22%; animation: floatDot 5s ease-in-out infinite 0s; }
-        .hero-dot:nth-child(2) { width:5px; height:5px; top:65%; right:15%; animation: floatDot 7s ease-in-out infinite 1.5s; }
-        .hero-dot:nth-child(3) { width:11px;height:11px;top:40%; right:35%; animation: floatDot 6s ease-in-out infinite 0.8s; }
+
+        .hero-dot:nth-child(1) {
+            width: 8px;
+            height: 8px;
+            top: 18%;
+            right: 22%;
+            animation: floatDot 5s ease-in-out infinite 0s;
+        }
+
+        .hero-dot:nth-child(2) {
+            width: 5px;
+            height: 5px;
+            top: 65%;
+            right: 15%;
+            animation: floatDot 7s ease-in-out infinite 1.5s;
+        }
+
+        .hero-dot:nth-child(3) {
+            width: 11px;
+            height: 11px;
+            top: 40%;
+            right: 35%;
+            animation: floatDot 6s ease-in-out infinite 0.8s;
+        }
 
         /* ─── Contact card entrance ─── */
         .contact-card {
             transition: transform 0.35s ease, box-shadow 0.35s ease;
         }
+
         .contact-card:hover {
             transform: translateY(-3px);
-            box-shadow: 0 24px 48px -12px rgba(120,87,67,0.12);
+            box-shadow: 0 24px 48px -12px rgba(120, 87, 67, 0.12);
         }
 
         /* ─── Smooth scroll ─── */
-        html { scroll-behavior: smooth; }
+        html {
+            scroll-behavior: smooth;
+        }
 
         /* ─── Footer link hover slide ─── */
         footer a {
@@ -319,34 +460,72 @@
             display: inline-block;
             transition: color 0.2s ease, transform 0.2s ease;
         }
-        footer a:hover { transform: translateX(4px); }
+
+        footer a:hover {
+            transform: translateX(4px);
+        }
 
         /* ─── Touch device: disable hover transforms ─── */
         @media (hover: none) {
-            .team-card:hover       { transform: none; box-shadow: none; }
-            .team-card:hover img   { transform: none; }
-            .contact-card:hover    { transform: none; box-shadow: none; }
-            .card-hover:hover      { transform: none; box-shadow: none; }
-            footer a:hover         { transform: none; }
+            .team-card:hover {
+                transform: none;
+                box-shadow: none;
+            }
+
+            .team-card:hover img {
+                transform: none;
+            }
+
+            .contact-card:hover {
+                transform: none;
+                box-shadow: none;
+            }
+
+            .card-hover:hover {
+                transform: none;
+                box-shadow: none;
+            }
+
+            footer a:hover {
+                transform: none;
+            }
         }
 
         /* ─── Reduce reveal distance on small screens ─── */
         @media (max-width: 639px) {
-            .reveal              { transform: translateY(14px); }
-            .reveal.reveal-left  { transform: translateY(14px); }
-            .reveal.reveal-right { transform: translateY(14px); }
+            .reveal {
+                transform: translateY(14px);
+            }
+
+            .reveal.reveal-left {
+                transform: translateY(14px);
+            }
+
+            .reveal.reveal-right {
+                transform: translateY(14px);
+            }
         }
 
         /* ─── Accessibility: respect reduced-motion ─── */
         @media (prefers-reduced-motion: reduce) {
+
             *,
-            .hero-badge, .hero-title, .hero-sub, .hero-ctas,
-            .whatsapp-pulse, .scroll-indicator,
-            .hero-shimmer-line, .hero-dot {
+            .hero-badge,
+            .hero-title,
+            .hero-sub,
+            .hero-ctas,
+            .whatsapp-pulse,
+            .scroll-indicator,
+            .hero-shimmer-line,
+            .hero-dot {
                 animation: none !important;
                 transition-duration: 0.01ms !important;
             }
-            .reveal { opacity: 1 !important; transform: none !important; }
+
+            .reveal {
+                opacity: 1 !important;
+                transform: none !important;
+            }
         }
     </style>
 </head>
@@ -360,7 +539,8 @@
                 <!-- Logo -->
                 <a href="index.html" class="flex items-center gap-x-3">
                     <!-- <img src="./assets/logo-dark.png" alt="Skinfit Aesthetics Logo" class="w-14 h-14 object-contain"> -->
-                    <img src="./assets/logo-dark-min.png" alt="Skinfit Aesthetics Logo" class="w-14 h-14 object-contain">
+                    <img src="./assets/logo-dark-min.png" alt="Skinfit Aesthetics Logo"
+                        class="w-14 h-14 object-contain">
                     <div class="logo-font text-3xl tracking-tight">
                         <span class="text-brand-dark">Skinfit</span>
                         <span class="text-gray-900">Aesthetics</span>
@@ -387,32 +567,63 @@
                             <i class="fa-solid fa-chevron-down text-xs ml-1"></i>
                         </a>
                         <!-- Dropdown Menu -->
-                                                <div class="dropdown hidden group-hover:block absolute top-full left-0 pt-3 w-[480px] bg-white rounded-3xl shadow-2xl border border-gray-100 p-5 z-50">
+                        <div
+                            class="dropdown hidden group-hover:block absolute top-full left-0 pt-3 w-[480px] bg-white rounded-3xl shadow-2xl border border-gray-100 p-5 z-50">
                             <div class="grid grid-cols-3 gap-x-4">
                                 <!-- Skin -->
                                 <div>
-                                    <p class="text-[10px] uppercase tracking-widest text-brand-dark font-semibold mb-2 px-2">Skin</p>
-                                    <a href="concerns.html#acne-pimples" class="block px-3 py-2 hover:bg-brand-dark/10 hover:text-brand-dark rounded-xl text-sm">Acne / Pimples</a>
-                                    <a href="concerns.html#acne-scar" class="block px-3 py-2 hover:bg-brand-dark/10 hover:text-brand-dark rounded-xl text-sm">Acne Scar</a>
-                                    <a href="concerns.html#pigmentation-glow" class="block px-3 py-2 hover:bg-brand-dark/10 hover:text-brand-dark rounded-xl text-sm">Pigmentation / Glow</a>
-                                    <a href="concerns.html#anti-ageing" class="block px-3 py-2 hover:bg-brand-dark/10 hover:text-brand-dark rounded-xl text-sm">Anti Ageing</a>
-                                    <a href="concerns.html#fungal-infection" class="block px-3 py-2 hover:bg-brand-dark/10 hover:text-brand-dark rounded-xl text-sm">Fungal Infection</a>
-                                    <a href="concerns.html#allergies" class="block px-3 py-2 hover:bg-brand-dark/10 hover:text-brand-dark rounded-xl text-sm">Allergies</a>
+                                    <p
+                                        class="text-[10px] uppercase tracking-widest text-brand-dark font-semibold mb-2 px-2">
+                                        Skin</p>
+                                    <a href="concerns.html#acne-pimples"
+                                        class="block px-3 py-2 hover:bg-brand-dark/10 hover:text-brand-dark rounded-xl text-sm">Acne
+                                        / Pimples</a>
+                                    <a href="concerns.html#acne-scar"
+                                        class="block px-3 py-2 hover:bg-brand-dark/10 hover:text-brand-dark rounded-xl text-sm">Acne
+                                        Scar</a>
+                                    <a href="concerns.html#pigmentation-glow"
+                                        class="block px-3 py-2 hover:bg-brand-dark/10 hover:text-brand-dark rounded-xl text-sm">Pigmentation
+                                        / Glow</a>
+                                    <a href="concerns.html#anti-ageing"
+                                        class="block px-3 py-2 hover:bg-brand-dark/10 hover:text-brand-dark rounded-xl text-sm">Anti
+                                        Ageing</a>
+                                    <a href="concerns.html#fungal-infection"
+                                        class="block px-3 py-2 hover:bg-brand-dark/10 hover:text-brand-dark rounded-xl text-sm">Fungal
+                                        Infection</a>
+                                    <a href="concerns.html#allergies"
+                                        class="block px-3 py-2 hover:bg-brand-dark/10 hover:text-brand-dark rounded-xl text-sm">Allergies</a>
                                 </div>
                                 <!-- Hair -->
                                 <div>
-                                    <p class="text-[10px] uppercase tracking-widest text-brand-dark font-semibold mb-2 px-2">Hair</p>
-                                    <a href="concerns.html#hair-loss" class="block px-3 py-2 hover:bg-brand-dark/10 hover:text-brand-dark rounded-xl text-sm">Hair Loss</a>
-                                    <a href="concerns.html#excessive-hair-growth" class="block px-3 py-2 hover:bg-brand-dark/10 hover:text-brand-dark rounded-xl text-sm">Excessive Hair Growth</a>
-                                    <a href="concerns.html#dandruff" class="block px-3 py-2 hover:bg-brand-dark/10 hover:text-brand-dark rounded-xl text-sm">Dandruff</a>
+                                    <p
+                                        class="text-[10px] uppercase tracking-widest text-brand-dark font-semibold mb-2 px-2">
+                                        Hair</p>
+                                    <a href="concerns.html#hair-loss"
+                                        class="block px-3 py-2 hover:bg-brand-dark/10 hover:text-brand-dark rounded-xl text-sm">Hair
+                                        Loss</a>
+                                    <a href="concerns.html#excessive-hair-growth"
+                                        class="block px-3 py-2 hover:bg-brand-dark/10 hover:text-brand-dark rounded-xl text-sm">Excessive
+                                        Hair Growth</a>
+                                    <a href="concerns.html#dandruff"
+                                        class="block px-3 py-2 hover:bg-brand-dark/10 hover:text-brand-dark rounded-xl text-sm">Dandruff</a>
                                 </div>
                                 <!-- Body & Other -->
                                 <div>
-                                    <p class="text-[10px] uppercase tracking-widest text-brand-dark font-semibold mb-2 px-2">Body &amp; Other</p>
-                                    <a href="concerns.html#clinical-dermatology" class="block px-3 py-2 hover:bg-brand-dark/10 hover:text-brand-dark rounded-xl text-sm">Clinical Dermatology</a>
-                                    <a href="concerns.html#paediatric-geriatric" class="block px-3 py-2 hover:bg-brand-dark/10 hover:text-brand-dark rounded-xl text-sm">Paediatric &amp; Geriatric</a>
-                                    <a href="concerns.html#excessive-sweating" class="block px-3 py-2 hover:bg-brand-dark/10 hover:text-brand-dark rounded-xl text-sm">Excessive Sweating</a>
-                                    <a href="concerns.html#nail-disorders" class="block px-3 py-2 hover:bg-brand-dark/10 hover:text-brand-dark rounded-xl text-sm">Nail Disorders</a>
+                                    <p
+                                        class="text-[10px] uppercase tracking-widest text-brand-dark font-semibold mb-2 px-2">
+                                        Body &amp; Other</p>
+                                    <a href="concerns.html#clinical-dermatology"
+                                        class="block px-3 py-2 hover:bg-brand-dark/10 hover:text-brand-dark rounded-xl text-sm">Clinical
+                                        Dermatology</a>
+                                    <a href="concerns.html#paediatric-geriatric"
+                                        class="block px-3 py-2 hover:bg-brand-dark/10 hover:text-brand-dark rounded-xl text-sm">Paediatric
+                                        &amp; Geriatric</a>
+                                    <a href="concerns.html#excessive-sweating"
+                                        class="block px-3 py-2 hover:bg-brand-dark/10 hover:text-brand-dark rounded-xl text-sm">Excessive
+                                        Sweating</a>
+                                    <a href="concerns.html#nail-disorders"
+                                        class="block px-3 py-2 hover:bg-brand-dark/10 hover:text-brand-dark rounded-xl text-sm">Nail
+                                        Disorders</a>
                                 </div>
                             </div>
                         </div>
@@ -425,46 +636,92 @@
                             <i class="fa-solid fa-chevron-down text-xs ml-1"></i>
                         </a>
                         <!-- Dropdown Menu -->
-                                                <div class="dropdown hidden group-hover:block absolute top-full left-0 pt-3 w-[600px] bg-white rounded-3xl shadow-2xl border border-gray-100 p-5 z-50">
+                        <div
+                            class="dropdown hidden group-hover:block absolute top-full left-0 pt-3 w-[600px] bg-white rounded-3xl shadow-2xl border border-gray-100 p-5 z-50">
                             <div class="grid grid-cols-4 gap-x-4">
                                 <!-- Skin -->
                                 <div>
-                                    <p class="text-[10px] uppercase tracking-widest text-brand-dark font-semibold mb-2 px-2">Skin</p>
-                                    <a href="treatments.html#chemical-peels" class="block px-3 py-2 hover:bg-brand-dark/10 hover:text-brand-dark rounded-xl text-sm">Chemical Peels</a>
-                                    <a href="treatments.html#vampire-facial" class="block px-3 py-2 hover:bg-brand-dark/10 hover:text-brand-dark rounded-xl text-sm">Vampire Facial</a>
-                                    <a href="treatments.html#microneedling" class="block px-3 py-2 hover:bg-brand-dark/10 hover:text-brand-dark rounded-xl text-sm">Microneedling</a>
-                                    <a href="treatments.html#hydrafacial" class="block px-3 py-2 hover:bg-brand-dark/10 hover:text-brand-dark rounded-xl text-sm">Hydrafacial</a>
-                                    <a href="treatments.html#mesotherapy" class="block px-3 py-2 hover:bg-brand-dark/10 hover:text-brand-dark rounded-xl text-sm">Mesotherapy</a>
-                                    <a href="treatments.html#exosomes" class="block px-3 py-2 hover:bg-brand-dark/10 hover:text-brand-dark rounded-xl text-sm">Exosomes</a>
-                                    <a href="treatments.html#salmon-dna-pdrn" class="block px-3 py-2 hover:bg-brand-dark/10 hover:text-brand-dark rounded-xl text-sm">Salmon DNA / PDRN</a>
-                                    <a href="treatments.html#skin-boosters" class="block px-3 py-2 hover:bg-brand-dark/10 hover:text-brand-dark rounded-xl text-sm">Skin Boosters</a>
+                                    <p
+                                        class="text-[10px] uppercase tracking-widest text-brand-dark font-semibold mb-2 px-2">
+                                        Skin</p>
+                                    <a href="treatments.html#chemical-peels"
+                                        class="block px-3 py-2 hover:bg-brand-dark/10 hover:text-brand-dark rounded-xl text-sm">Chemical
+                                        Peels</a>
+                                    <a href="treatments.html#vampire-facial"
+                                        class="block px-3 py-2 hover:bg-brand-dark/10 hover:text-brand-dark rounded-xl text-sm">Vampire
+                                        Facial</a>
+                                    <a href="treatments.html#microneedling"
+                                        class="block px-3 py-2 hover:bg-brand-dark/10 hover:text-brand-dark rounded-xl text-sm">Microneedling</a>
+                                    <a href="treatments.html#hydrafacial"
+                                        class="block px-3 py-2 hover:bg-brand-dark/10 hover:text-brand-dark rounded-xl text-sm">Hydrafacial</a>
+                                    <a href="treatments.html#mesotherapy"
+                                        class="block px-3 py-2 hover:bg-brand-dark/10 hover:text-brand-dark rounded-xl text-sm">Mesotherapy</a>
+                                    <a href="treatments.html#exosomes"
+                                        class="block px-3 py-2 hover:bg-brand-dark/10 hover:text-brand-dark rounded-xl text-sm">Exosomes</a>
+                                    <a href="treatments.html#salmon-dna-pdrn"
+                                        class="block px-3 py-2 hover:bg-brand-dark/10 hover:text-brand-dark rounded-xl text-sm">Salmon
+                                        DNA / PDRN</a>
+                                    <a href="treatments.html#skin-boosters"
+                                        class="block px-3 py-2 hover:bg-brand-dark/10 hover:text-brand-dark rounded-xl text-sm">Skin
+                                        Boosters</a>
                                 </div>
                                 <!-- Hair -->
                                 <div>
-                                    <p class="text-[10px] uppercase tracking-widest text-brand-dark font-semibold mb-2 px-2">Hair</p>
-                                    <a href="treatments.html#prp" class="block px-3 py-2 hover:bg-brand-dark/10 hover:text-brand-dark rounded-xl text-sm">PRP</a>
-                                    <a href="treatments.html#gfc" class="block px-3 py-2 hover:bg-brand-dark/10 hover:text-brand-dark rounded-xl text-sm">GFC</a>
-                                    <a href="treatments.html#hair-threads" class="block px-3 py-2 hover:bg-brand-dark/10 hover:text-brand-dark rounded-xl text-sm">Hair Threads</a>
-                                    <a href="treatments.html#dutasteride" class="block px-3 py-2 hover:bg-brand-dark/10 hover:text-brand-dark rounded-xl text-sm">Dutasteride</a>
-                                    <a href="treatments.html#hair-transplant" class="block px-3 py-2 hover:bg-brand-dark/10 hover:text-brand-dark rounded-xl text-sm">Hair Transplant</a>
+                                    <p
+                                        class="text-[10px] uppercase tracking-widest text-brand-dark font-semibold mb-2 px-2">
+                                        Hair</p>
+                                    <a href="treatments.html#prp"
+                                        class="block px-3 py-2 hover:bg-brand-dark/10 hover:text-brand-dark rounded-xl text-sm">PRP</a>
+                                    <a href="treatments.html#gfc"
+                                        class="block px-3 py-2 hover:bg-brand-dark/10 hover:text-brand-dark rounded-xl text-sm">GFC</a>
+                                    <a href="treatments.html#hair-threads"
+                                        class="block px-3 py-2 hover:bg-brand-dark/10 hover:text-brand-dark rounded-xl text-sm">Hair
+                                        Threads</a>
+                                    <a href="treatments.html#dutasteride"
+                                        class="block px-3 py-2 hover:bg-brand-dark/10 hover:text-brand-dark rounded-xl text-sm">Dutasteride</a>
+                                    <a href="treatments.html#hair-transplant"
+                                        class="block px-3 py-2 hover:bg-brand-dark/10 hover:text-brand-dark rounded-xl text-sm">Hair
+                                        Transplant</a>
                                 </div>
                                 <!-- Laser & Body -->
                                 <div>
-                                    <p class="text-[10px] uppercase tracking-widest text-brand-dark font-semibold mb-2 px-2">Laser &amp; Body</p>
-                                    <a href="treatments.html#laser-hair-reduction" class="block px-3 py-2 hover:bg-brand-dark/10 hover:text-brand-dark rounded-xl text-sm">Laser Hair Reduction</a>
-                                    <a href="treatments.html#fat-reduction" class="block px-3 py-2 hover:bg-brand-dark/10 hover:text-brand-dark rounded-xl text-sm">Fat Reduction</a>
-                                    <a href="treatments.html#mole-removal" class="block px-3 py-2 hover:bg-brand-dark/10 hover:text-brand-dark rounded-xl text-sm">Mole Removal</a>
-                                    <a href="treatments.html#scar-correction" class="block px-3 py-2 hover:bg-brand-dark/10 hover:text-brand-dark rounded-xl text-sm">Scar Correction</a>
-                                    <a href="treatments.html#iv-drips" class="block px-3 py-2 hover:bg-brand-dark/10 hover:text-brand-dark rounded-xl text-sm">IV Drips</a>
-                                    <a href="treatments.html#ear-piercing" class="block px-3 py-2 hover:bg-brand-dark/10 hover:text-brand-dark rounded-xl text-sm">Ear Piercing</a>
+                                    <p
+                                        class="text-[10px] uppercase tracking-widest text-brand-dark font-semibold mb-2 px-2">
+                                        Laser &amp; Body</p>
+                                    <a href="treatments.html#laser-hair-reduction"
+                                        class="block px-3 py-2 hover:bg-brand-dark/10 hover:text-brand-dark rounded-xl text-sm">Laser
+                                        Hair Reduction</a>
+                                    <a href="treatments.html#fat-reduction"
+                                        class="block px-3 py-2 hover:bg-brand-dark/10 hover:text-brand-dark rounded-xl text-sm">Fat
+                                        Reduction</a>
+                                    <a href="treatments.html#mole-removal"
+                                        class="block px-3 py-2 hover:bg-brand-dark/10 hover:text-brand-dark rounded-xl text-sm">Mole
+                                        Removal</a>
+                                    <a href="treatments.html#scar-correction"
+                                        class="block px-3 py-2 hover:bg-brand-dark/10 hover:text-brand-dark rounded-xl text-sm">Scar
+                                        Correction</a>
+                                    <a href="treatments.html#iv-drips"
+                                        class="block px-3 py-2 hover:bg-brand-dark/10 hover:text-brand-dark rounded-xl text-sm">IV
+                                        Drips</a>
+                                    <a href="treatments.html#ear-piercing"
+                                        class="block px-3 py-2 hover:bg-brand-dark/10 hover:text-brand-dark rounded-xl text-sm">Ear
+                                        Piercing</a>
                                 </div>
                                 <!-- Aesthetic -->
                                 <div>
-                                    <p class="text-[10px] uppercase tracking-widest text-brand-dark font-semibold mb-2 px-2">Aesthetic</p>
-                                    <a href="treatments.html#botox" class="block px-3 py-2 hover:bg-brand-dark/10 hover:text-brand-dark rounded-xl text-sm">BOTOX</a>
-                                    <a href="treatments.html#fillers" class="block px-3 py-2 hover:bg-brand-dark/10 hover:text-brand-dark rounded-xl text-sm">Fillers</a>
-                                    <a href="treatments.html#bridal-skincare" class="block px-3 py-2 hover:bg-brand-dark/10 hover:text-brand-dark rounded-xl text-sm">Bridal Skincare</a>
-                                    <a href="treatments.html#nonsurgical-threadlift" class="block px-3 py-2 hover:bg-brand-dark/10 hover:text-brand-dark rounded-xl text-sm">Nonsurgical Threadlift</a>
+                                    <p
+                                        class="text-[10px] uppercase tracking-widest text-brand-dark font-semibold mb-2 px-2">
+                                        Aesthetic</p>
+                                    <a href="treatments.html#botox"
+                                        class="block px-3 py-2 hover:bg-brand-dark/10 hover:text-brand-dark rounded-xl text-sm">BOTOX</a>
+                                    <a href="treatments.html#fillers"
+                                        class="block px-3 py-2 hover:bg-brand-dark/10 hover:text-brand-dark rounded-xl text-sm">Fillers</a>
+                                    <a href="treatments.html#bridal-skincare"
+                                        class="block px-3 py-2 hover:bg-brand-dark/10 hover:text-brand-dark rounded-xl text-sm">Bridal
+                                        Skincare</a>
+                                    <a href="treatments.html#nonsurgical-threadlift"
+                                        class="block px-3 py-2 hover:bg-brand-dark/10 hover:text-brand-dark rounded-xl text-sm">Nonsurgical
+                                        Threadlift</a>
                                 </div>
                             </div>
                         </div>
@@ -560,15 +817,18 @@
 
         <div class="max-w-7xl mx-auto px-6 lg:px-8 grid lg:grid-cols-12 gap-12 items-center h-full">
             <div class="lg:col-span-6">
-                <div class="hero-badge inline-flex items-center bg-white/10 backdrop-blur-md text-white text-sm font-bold px-5 h-9 rounded-3xl mb-6 sm:mb-8">
+                <div
+                    class="hero-badge inline-flex items-center bg-white/10 backdrop-blur-md text-white text-sm font-bold px-5 h-9 rounded-3xl mb-6 sm:mb-8">
                     <span class="w-2 h-2 bg-emerald-500 rounded-full mr-2 animate-pulse"></span>
                     NOW OPEN IN PUNE
                 </div>
-                <h1 class="hero-title text-4xl sm:text-5xl lg:text-7xl font-semibold leading-tight sm:leading-none logo-font tracking-tighter">
+                <h1
+                    class="hero-title text-4xl sm:text-5xl lg:text-7xl font-semibold leading-tight sm:leading-none logo-font tracking-tighter">
                     <span class="hero-shimmer-line">Healthy skin.</span><br>Confident you.
                 </h1>
                 <p class="hero-sub mt-4 sm:mt-6 text-base sm:text-xl max-w-lg text-white/90">
-                    Expert dermatologist in Kharadi, Pune — advanced aesthetics &amp; personalized skin and hair care at Skinfit Aesthetics.
+                    Expert dermatologist in Kharadi, Pune — advanced aesthetics &amp; personalized skin and hair care at
+                    Skinfit Aesthetics.
                 </p>
                 <div class="hero-ctas flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4 mt-8 sm:mt-10">
                     <a href="index.html#contact"
@@ -618,7 +878,8 @@
         </div>
 
         <!-- Scroll indicator -->
-        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center text-white/70 text-xs tracking-widest scroll-indicator">
+        <div
+            class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center text-white/70 text-xs tracking-widest scroll-indicator">
             <p>SCROLL</p>
             <i class="fa-solid fa-chevron-down mt-2"></i>
         </div>
@@ -632,8 +893,11 @@
                 <!-- Left Text -->
                 <div class="lg:col-span-7">
                     <div class="max-w-lg">
-                        <span class="reveal reveal-left delay-100 inline-block px-4 py-1.5 bg-brand-dark/10 text-brand-dark text-sm font-semibold rounded-3xl">OUR STORY</span>
-                        <h2 class="reveal reveal-left delay-200 text-4xl sm:text-5xl lg:text-6xl font-semibold logo-font tracking-tighter mt-5 leading-tight lg:leading-none">
+                        <span
+                            class="reveal reveal-left delay-100 inline-block px-4 py-1.5 bg-brand-dark/10 text-brand-dark text-sm font-semibold rounded-3xl">OUR
+                            STORY</span>
+                        <h2
+                            class="reveal reveal-left delay-200 text-4xl sm:text-5xl lg:text-6xl font-semibold logo-font tracking-tighter mt-5 leading-tight lg:leading-none">
                             Expert care.<br>Personalized results.
                         </h2>
                         <p class="reveal delay-300 mt-6 text-base lg:text-lg text-gray-600 leading-relaxed">
@@ -690,9 +954,11 @@
 
                 <!-- Left placard + info -->
                 <div class="lg:col-span-5 flex flex-col">
-                    <div class="contact-card reveal reveal-left bg-white rounded-3xl shadow-xl p-6 sm:p-8 lg:p-10 flex flex-col flex-1">
+                    <div
+                        class="contact-card reveal reveal-left bg-white rounded-3xl shadow-xl p-6 sm:p-8 lg:p-10 flex flex-col flex-1">
                         <h2 class="text-3xl sm:text-4xl font-semibold logo-font">Get in touch</h2>
-                        <p class="text-gray-600 mt-2 sm:mt-3 text-sm sm:text-base">We'd love to hear from you. Book your consultation today.</p>
+                        <p class="text-gray-600 mt-2 sm:mt-3 text-sm sm:text-base">We'd love to hear from you. Book your
+                            consultation today.</p>
 
                         <div class="mt-6 sm:mt-10 space-y-5 sm:space-y-6 flex-1">
                             <!-- Phone -->
@@ -700,16 +966,19 @@
                                 <i class="fa-solid fa-phone text-brand-dark text-xl sm:text-2xl mt-1 flex-shrink-0"></i>
                                 <div>
                                     <p class="font-medium text-sm sm:text-base">Call or WhatsApp</p>
-                                    <a href="tel:+917276825422" class="text-xl sm:text-2xl font-semibold text-gray-800">+91 7276825422</a>
+                                    <a href="tel:+917276825422"
+                                        class="text-xl sm:text-2xl font-semibold text-gray-800">+91 7276825422</a>
                                 </div>
                             </div>
 
                             <!-- Address -->
                             <div class="flex items-start gap-x-3 sm:gap-x-4">
-                                <i class="fa-solid fa-location-dot text-brand-dark text-xl sm:text-2xl mt-1 flex-shrink-0"></i>
+                                <i
+                                    class="fa-solid fa-location-dot text-brand-dark text-xl sm:text-2xl mt-1 flex-shrink-0"></i>
                                 <div>
                                     <p class="font-medium text-sm sm:text-base">Clinic Address</p>
-                                    <p class="text-gray-700 text-sm sm:text-base">Krish Heights Thitewasti main road, Mundhwa - Kharadi Rd,
+                                    <p class="text-gray-700 text-sm sm:text-base">Krish Heights Thitewasti main road,
+                                        Mundhwa - Kharadi Rd,
                                         opp. H P Petrol Pump, near Bank of Baroda, Kharadi, Pune, Maharashtra 411014</p>
                                 </div>
                             </div>
@@ -719,17 +988,20 @@
                                 <i class="fa-solid fa-clock text-brand-dark text-xl sm:text-2xl mt-1 flex-shrink-0"></i>
                                 <div>
                                     <p class="font-medium text-sm sm:text-base">Clinic Timings</p>
-                                    <p class="text-gray-700 text-sm sm:text-base">Fri–Wed: 4:00 PM – 9:00 PM<br>Thursday: 9:00 AM – 9:00 PM</p>
+                                    <p class="text-gray-700 text-sm sm:text-base">Fri–Wed: 4:00 PM – 9:00
+                                        PM<br>Thursday: 9:00 AM – 9:00 PM</p>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Social -->
                         <div class="mt-6 sm:mt-8 pt-6 sm:pt-8 border-t flex items-center gap-x-5 sm:gap-x-6">
-                            <a href="https://www.instagram.com/dr.varun_skinfit/" target="_blank"
-                                class="text-3xl hover:text-brand-dark min-w-[44px] min-h-[44px] flex items-center"><i class="fa-brands fa-instagram"></i></a>
-                            <a href="https://www.instagram.com/skinfit_aesthetics_clinic/" target="_blank"
-                                class="text-3xl hover:text-brand-dark min-w-[44px] min-h-[44px] flex items-center"><i class="fa-brands fa-instagram"></i></a>
+                            <a data-social-link="instagram"
+                                class="text-3xl hover:text-brand-dark min-w-[44px] min-h-[44px] flex items-center"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                            <a data-social-link="facebook"
+                                class="text-3xl hover:text-brand-dark min-w-[44px] min-h-[44px] flex items-center"><i
+                                    class="fa-brands fa-facebook"></i></a>
                             <span class="text-xs sm:text-sm text-gray-400 ml-auto">Follow us for skincare tips</span>
                         </div>
 
@@ -745,7 +1017,8 @@
 
                 <!-- Right: Google Maps + Form -->
                 <div class="lg:col-span-7 flex flex-col">
-                    <div class="contact-card reveal reveal-right delay-200 bg-white rounded-3xl p-6 sm:p-8 shadow-xl flex flex-col flex-1">
+                    <div
+                        class="contact-card reveal reveal-right delay-200 bg-white rounded-3xl p-6 sm:p-8 shadow-xl flex flex-col flex-1">
                         <!-- Google Maps Embed - REPLACE src with your own embed code -->
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.642221448244!2d73.93107727703537!3d18.54506322346487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c1476868eba1%3A0xb334b0d2be53219d!2sSkinfit%20aesthetics!5e0!3m2!1sen!2sus!4v1776608858318!5m2!1sen!2sus"
@@ -771,7 +1044,8 @@
                                     class="w-full px-4 sm:px-5 py-3 sm:py-4 rounded-3xl border border-gray-200 focus:border-brand-dark outline-none text-base">
                             </div>
                             <div class="md:col-span-2">
-                                <label class="block text-sm font-medium text-gray-600 mb-2">Tell us about your concern</label>
+                                <label class="block text-sm font-medium text-gray-600 mb-2">Tell us about your
+                                    concern</label>
                                 <textarea id="message" rows="4" required
                                     class="w-full px-4 sm:px-5 py-3 sm:py-4 rounded-3xl border border-gray-200 focus:border-brand-dark outline-none resize-none text-base"></textarea>
                             </div>
@@ -806,10 +1080,10 @@
                         compassionate care.</p>
                     <!-- Social icons on mobile -->
                     <div class="flex gap-x-5 text-2xl mt-6 md:hidden">
-                        <a href="https://www.instagram.com/dr.varun_skinfit/" target="_blank"
+                        <a data-social-link="instagram"
                             class="text-3xl hover:text-brand-dark"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://www.instagram.com/skinfit_aesthetics_clinic/" target="_blank"
-                            class="text-3xl hover:text-brand-dark"><i class="fa-brands fa-instagram"></i></a>
+                        <a data-social-link="facebook"
+                            class="text-3xl hover:text-brand-dark"><i class="fa-brands fa-facebook"></i></a>
                         <span class="text-sm text-gray-400 ml-auto">Follow us for skincare tips</span>
                     </div>
                 </div>
@@ -833,10 +1107,10 @@
                 <div class="hidden md:block md:col-span-3">
                     <p class="text-sm mb-4">Follow us for skincare tips</p>
                     <div class="flex gap-x-5 text-3xl">
-                        <a href="https://www.instagram.com/dr.varun_skinfit/" target="_blank"
+                        <a data-social-link="instagram"
                             class="text-3xl hover:text-brand-dark"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://www.instagram.com/skinfit_aesthetics_clinic/" target="_blank"
-                            class="text-3xl hover:text-brand-dark"><i class="fa-brands fa-instagram"></i></a>
+                        <a data-social-link="facebook"
+                            class="text-3xl hover:text-brand-dark"><i class="fa-brands fa-facebook"></i></a>
                         <!-- <span class="text-sm text-gray-400 ml-auto">Follow us for skincare tips</span> -->
                     </div>
                     <p class="text-xs text-gray-400 mt-8">Made with ❤️ for beautiful skin</p>
@@ -987,6 +1261,7 @@
             }, { passive: true })
         })
     </script>
+    <script src="./assets/js/site-config.js"></script>
 </body>
 
 </html>
