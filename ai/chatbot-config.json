@@ -1,0 +1,4 @@
+{
+  "enabled": true,
+  "apiBase": "http://localhost:3001/ai/api"
+}
