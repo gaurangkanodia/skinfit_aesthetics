@@ -51,127 +51,13 @@
 
     <link rel="icon" type="image/png" href="/assets/icons/logo-dark-min.ico">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./assets/js/tailwind-config.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-
-        :root {
-            --brand: #CFAA89;
-            --brand-light: #DDC6AC;
-            --brand-dark: #785743;
-            --brand-soft: #A7836A;
-        }
-
-        * {
-            transition-property: color, background-color, border-color;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-            transition-duration: 150ms;
-        }
-
-        .tail-container *:not(i) { font-family: 'Raleway', system-ui, sans-serif; }
-        .logo-font { font-family: 'Raleway', sans-serif; }
-        html { scroll-behavior: smooth; }
-
-        /* ─── Nav ─── */
-        .sticky-header { backdrop-filter: blur(12px); }
-        nav.sticky-header { position: sticky; top: 0; z-index: 1000; }
-        nav .dropdown, nav [class*="group-hover"] { z-index: 1001 !important; }
-
-        .dropdown { animation: dropdownFade 0.2s ease forwards; }
-        @keyframes dropdownFade {
-            from { opacity: 0; transform: translateY(-8px); }
-            to   { opacity: 1; transform: translateY(0); }
-        }
-
-        nav a:not(.flex):not([class*="bg-"]):not([class*="border"]) { position: relative; }
-        nav a:not(.flex):not([class*="bg-"]):not([class*="border"])::after {
-            content: ''; position: absolute; bottom: -2px; left: 0;
-            width: 0; height: 2px; background: var(--brand-dark);
-            transition: width 0.25s ease;
-        }
-        nav a:not(.flex):not([class*="bg-"]):not([class*="border"]):hover::after { width: 100%; }
-
-        /* ─── WhatsApp pulse ─── */
-        @keyframes wpPulse {
-            0%   { box-shadow: 0 0 0 0 rgba(37,211,102,0.5); }
-            70%  { box-shadow: 0 0 0 12px rgba(37,211,102,0); }
-            100% { box-shadow: 0 0 0 0 rgba(37,211,102,0); }
-        }
-        .whatsapp-pulse { animation: wpPulse 2.2s ease-out infinite; }
-        .whatsapp-button { padding: 5px 15px; }
-
-        /* ─── Page header entrance ─── */
-        @keyframes fadeUp {
-            from { opacity: 0; transform: translateY(28px); }
-            to   { opacity: 1; transform: translateY(0); }
-        }
-        .page-pill  { animation: fadeUp 0.6s cubic-bezier(0.34,1.56,0.64,1) 0.1s both; }
-        .page-title { animation: fadeUp 0.7s cubic-bezier(0.4,0,0.2,1) 0.25s both; }
-        .page-sub   { animation: fadeUp 0.7s cubic-bezier(0.4,0,0.2,1) 0.4s both; }
-
-        /* ─── Scroll-reveal ─── */
-        .reveal {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.55s cubic-bezier(0.4,0,0.2,1),
-                        transform 0.55s cubic-bezier(0.4,0,0.2,1);
-        }
-        .reveal.visible { opacity: 1; transform: translateY(0); }
-
-        /* ─── Card ─── */
-        .concern-card {
-            transition: transform 0.32s cubic-bezier(0.4,0,0.2,1),
-                        box-shadow 0.32s cubic-bezier(0.4,0,0.2,1),
-                        border-color 0.2s ease;
-        }
-        .concern-card img { transition: transform 0.45s cubic-bezier(0.4,0,0.2,1); }
-        .card-arrow { transition: transform 0.25s ease; display: inline-block; }
-
-        /* ─── Modal ─── */
-        @keyframes modalPop {
-            from { opacity: 0; transform: scale(0.93) translateY(20px); }
-            to   { opacity: 1; transform: scale(1) translateY(0); }
-        }
-        .modal-content { animation: modalPop 0.35s cubic-bezier(0.34,1.56,0.64,1) both; }
-        .modal-img { transition: transform 0.6s ease; }
-
-        /* ─── Footer ─── */
-        footer a { display: inline-block; transition: color 0.2s ease, transform 0.2s ease; }
-
-        /* ─── Hover effects: pointer devices only ─── */
-        @media (hover: hover) {
-            .concern-card:hover {
-                transform: translateY(-6px);
-                box-shadow: 0 24px 48px -12px rgba(120,87,67,0.18);
-            }
-            .concern-card:hover img { transform: scale(1.07); }
-            .concern-card:hover .card-arrow { transform: translateX(5px); }
-            footer a:hover { transform: translateX(4px); }
-        }
-
-        /* ─── Mobile: reduce reveal distance ─── */
-        @media (max-width: 639px) {
-            .reveal { transform: translateY(12px); }
-        }
-
-        /* ─── Mobile: modal full-screen feel ─── */
-        @media (max-width: 639px) {
-            #detail-modal { padding: 0.5rem; align-items: flex-end; }
-            .modal-content { border-bottom-left-radius: 0; border-bottom-right-radius: 0; max-height: 92vh; }
-        }
-
-        /* ─── Accessibility: reduced motion ─── */
-        @media (prefers-reduced-motion: reduce) {
-            *, .page-pill, .page-title, .page-sub, .whatsapp-pulse {
-                animation: none !important;
-                transition-duration: 0.01ms !important;
-            }
-            .reveal { opacity: 1 !important; transform: none !important; }
-        }
-    </style>
+    <link rel="stylesheet" href="./css/site.css">
+    <link rel="stylesheet" href="./css/catalog.css">
 </head>
 
-<body class="tail-container bg-gray-50">
+<body class="tail-container bg-gray-50 catalog-page">
 
     <!-- NAV -->
     <nav class="sticky-header bg-white border-b border-gray-100 shadow-sm z-50">
@@ -277,17 +163,17 @@
                 <div class="hidden lg:flex items-center gap-x-4">
                     <a href="https://api.whatsapp.com/send?phone=917276825422&text=Hello%20Skinfit%20Aesthetics%2C%20I%20would%20like%20to%20book%20an%20appointment"
                         target="_blank"
-                        class="whatsapp-pulse flex items-center justify-center gap-x-3 bg-[#25D366] text-white h-14 rounded-3xl text-sm font-medium whatsapp-button">
+                        class="flex w-48 h-12 items-center justify-center gap-x-3 bg-[#25D366] text-white rounded-3xl text-sm font-medium">
                         <i class="fa-brands fa-whatsapp text-2xl"></i>
                         BOOK VIA WHATSAPP
                     </a>
                     <a href="index.html#contact"
-                        class="border border-brand-dark hover:bg-brand-dark hover:text-white text-brand-dark px-7 py-3 rounded-3xl font-medium text-sm">
+                        class="flex w-48 h-12 items-center justify-center border border-brand-dark hover:bg-brand-dark hover:text-white text-brand-dark rounded-3xl font-medium text-sm">
                         Book Appointment
                     </a>
                 </div>
 
-                <button onclick="toggleMobileMenu()" class="lg:hidden w-11 h-11 flex items-center justify-center text-2xl text-gray-700 hover:text-brand-dark">
+                <button data-menu-toggle aria-label="Toggle navigation menu" aria-controls="mobile-menu" aria-expanded="false" class="lg:hidden w-11 h-11 flex items-center justify-center text-2xl text-gray-700 hover:text-brand-dark">
                     <i class="fa-solid fa-bars" id="hamburger-icon"></i>
                 </button>
             </div>
@@ -296,31 +182,31 @@
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden lg:hidden bg-white border-t px-6 py-6 shadow-xl">
             <div class="flex flex-col gap-y-6 text-base">
-                <a href="index.html#about" onclick="toggleMobileMenu()" class="font-medium">About</a>
-                <a href="index.html#contact" onclick="toggleMobileMenu()" class="font-medium">Contact us / Book Appointment</a>
+                <a href="index.html#about" data-menu-close class="font-medium">About</a>
+                <a href="index.html#contact" data-menu-close class="font-medium">Contact us / Book Appointment</a>
                 <div class="border-t pt-4">
                     <p class="text-xs uppercase tracking-widest text-gray-400 mb-3">Concerns</p>
                     <div class="grid grid-cols-2 gap-2 text-sm">
-                        <a href="concerns.html#acne-pimples" onclick="toggleMobileMenu()" class="py-2 px-4 hover:bg-gray-100 rounded-2xl">Acne / Pimples</a>
-                        <a href="concerns.html#acne-scar" onclick="toggleMobileMenu()" class="py-2 px-4 hover:bg-gray-100 rounded-2xl">Acne Scar</a>
-                        <a href="concerns.html#pigmentation-glow" onclick="toggleMobileMenu()" class="py-2 px-4 hover:bg-gray-100 rounded-2xl">Pigmentation / Glow</a>
-                        <a href="concerns.html#anti-ageing" onclick="toggleMobileMenu()" class="py-2 px-4 hover:bg-gray-100 rounded-2xl">Anti Ageing</a>
-                        <a href="concerns.html#hair-loss" onclick="toggleMobileMenu()" class="py-2 px-4 hover:bg-gray-100 rounded-2xl">Hair Loss</a>
-                        <a href="concerns.html#excessive-hair-growth" onclick="toggleMobileMenu()" class="py-2 px-4 hover:bg-gray-100 rounded-2xl">Excessive Hair Growth</a>
-                        <a href="concerns.html" onclick="toggleMobileMenu()" class="py-2 px-4 hover:bg-gray-100 rounded-2xl text-brand-dark font-medium">View all →</a>
+                        <a href="concerns.html#acne-pimples" data-menu-close class="py-2 px-4 hover:bg-gray-100 rounded-2xl">Acne / Pimples</a>
+                        <a href="concerns.html#acne-scar" data-menu-close class="py-2 px-4 hover:bg-gray-100 rounded-2xl">Acne Scar</a>
+                        <a href="concerns.html#pigmentation-glow" data-menu-close class="py-2 px-4 hover:bg-gray-100 rounded-2xl">Pigmentation / Glow</a>
+                        <a href="concerns.html#anti-ageing" data-menu-close class="py-2 px-4 hover:bg-gray-100 rounded-2xl">Anti Ageing</a>
+                        <a href="concerns.html#hair-loss" data-menu-close class="py-2 px-4 hover:bg-gray-100 rounded-2xl">Hair Loss</a>
+                        <a href="concerns.html#excessive-hair-growth" data-menu-close class="py-2 px-4 hover:bg-gray-100 rounded-2xl">Excessive Hair Growth</a>
+                        <a href="concerns.html" data-menu-close class="py-2 px-4 hover:bg-gray-100 rounded-2xl text-brand-dark font-medium">View all →</a>
                     </div>
                 </div>
                 <div class="border-t pt-4">
                     <p class="text-xs uppercase tracking-widest text-gray-400 mb-3">Treatments</p>
                     <div class="grid grid-cols-2 gap-2 text-sm">
-                        <a href="treatments.html#chemical-peels" onclick="toggleMobileMenu()" class="py-2 px-4 hover:bg-gray-100 rounded-2xl">Chemical Peels</a>
-                        <a href="treatments.html#botox" onclick="toggleMobileMenu()" class="py-2 px-4 hover:bg-gray-100 rounded-2xl">BOTOX</a>
-                        <a href="treatments.html" onclick="toggleMobileMenu()" class="py-2 px-4 hover:bg-gray-100 rounded-2xl text-brand-dark font-medium">View all →</a>
+                        <a href="treatments.html#chemical-peels" data-menu-close class="py-2 px-4 hover:bg-gray-100 rounded-2xl">Chemical Peels</a>
+                        <a href="treatments.html#botox" data-menu-close class="py-2 px-4 hover:bg-gray-100 rounded-2xl">BOTOX</a>
+                        <a href="treatments.html" data-menu-close class="py-2 px-4 hover:bg-gray-100 rounded-2xl text-brand-dark font-medium">View all →</a>
                     </div>
                 </div>
                 <div class="pt-4 border-t">
                     <a href="https://wa.me/917276825422?text=Hello%20Skinfit%20Aesthetics%2C%20I%20would%20like%20to%20book%20an%20appointment"
-                        target="_blank" onclick="toggleMobileMenu()"
+                        target="_blank" data-menu-close
                         class="flex justify-center items-center gap-x-2 bg-brand-dark text-white py-4 rounded-3xl font-medium">
                         <i class="fa-brands fa-whatsapp text-xl"></i>
                         Book via WhatsApp
@@ -346,12 +232,12 @@
 
     <!-- MODAL -->
     <div id="detail-modal"
-         onclick="if(event.target.id==='detail-modal') closeModal()"
+         data-modal-dismiss
          class="hidden fixed inset-0 bg-black/60 z-[9999] items-center justify-center p-2 sm:p-4">
-        <div onclick="event.stopImmediatePropagation()"
+        <div
              class="modal-content bg-white w-full max-w-2xl rounded-3xl overflow-hidden max-h-[92vh] sm:max-h-[90vh] flex flex-col">
             <div class="relative flex-shrink-0">
-                <button onclick="closeModal()"
+                <button data-modal-close
                         class="absolute top-3 right-3 sm:top-5 sm:right-5 w-9 h-9 bg-white/90 backdrop-blur rounded-full text-gray-500 hover:text-gray-800 flex items-center justify-center text-lg z-10 shadow-sm">
                     ✕
                 </button>
@@ -371,161 +257,8 @@
         </div>
     </div>
 
-    <script>
-        tailwind.config = { theme: { extend: { colors: { brand: '#CFAA89', 'brand-dark': '#785743', 'brand-soft': '#A7836A' } } } }
-
-        function toggleMobileMenu() {
-            const menu = document.getElementById('mobile-menu')
-            const icon = document.getElementById('hamburger-icon')
-            if (menu.classList.contains('hidden')) {
-                menu.classList.remove('hidden')
-                icon.classList.replace('fa-bars', 'fa-xmark')
-            } else {
-                menu.classList.add('hidden')
-                icon.classList.replace('fa-xmark', 'fa-bars')
-            }
-        }
-
-        const concernsData = {
-            "acne-pimples": {
-                title: "Acne / Pimples",
-                image: "./assets/concerns/acne.jpg",
-                desc: "<p>Acne is one of the most common skin conditions affecting teenagers and adults. It appears as pimples, blackheads, whiteheads, and cysts caused by clogged pores and bacteria.</p><p class='mt-3'>Our customized treatment plans combine medical-grade peels, topical medications, and laser therapy to clear skin fast and prevent scarring.</p>"
-            },
-            "acne-scar": {
-                title: "Acne Scar",
-                image: "./assets/concerns/acne-scar.jpg",
-                desc: "<p>Post-acne scars can affect confidence long after pimples heal. We offer microneedling, laser resurfacing, PRP, and chemical peels to smooth texture and fade marks effectively.</p>"
-            },
-            "pigmentation-glow": {
-                title: "Pigmentation / Glow",
-                image: "./assets/concerns/pigmentation.jpg",
-                desc: "<p>Uneven skin tone, dark spots, melasma, and dullness are treated with advanced chemical peels, laser toning, and brightening infusions to restore natural radiance and glow.</p>"
-            },
-            "anti-ageing": {
-                title: "Anti Ageing",
-                image: "./assets/concerns/anti-ageing.jpg",
-                desc: "<p>Ageing can't be stopped, but it can be refined. Our approach focuses on natural-looking rejuvenation—improving skin quality, restoring lost volume, and gently lifting features through advanced facials, skin boosters, injectables like Botox and fillers, and non-surgical thread lifts.</p><p class='mt-3'>Every treatment is personalized to maintain your natural expressions and individuality.</p>"
-            },
-            "hair-loss": {
-                title: "Hair Loss",
-                image: "./assets/concerns/hair-loss.jpg",
-                desc: "<p>Hair loss can be distressing, but it is not always permanent. The first step is a thorough evaluation to determine whether you are experiencing true hair loss or temporary shedding, using state-of-the-art diagnostic technologies.</p><p class='mt-3'>With early intervention and the right treatment plan, we aim to control hair fall, improve hair density, and restore healthier growth using PRP, GFC, exosomes, hair threads, and dutasteride injections.</p>"
-            },
-            "excessive-hair-growth": {
-                title: "Excessive Hair Growth",
-                image: "./assets/concerns/hirsutism.jpg",
-                desc: "<p>Laser hair reduction offers a safe, effective, and long-term solution for unwanted hair. Our advanced triple-wavelength technology combines Diode, Alexandrite, and Long Pulse Nd:YAG lasers to target hair at different depths, making it effective across various skin types.</p><p class='mt-3'>Treatments are designed to achieve progressive, long-lasting reduction while maintaining skin safety and comfort.</p>"
-            },
-            "clinical-dermatology": {
-                title: "Clinical Dermatology",
-                image: "./assets/concerns/clinical.jpg",
-                desc: "<p>Our clinical dermatology services focus on the diagnosis and treatment of a wide range of skin, hair, and body conditions. From psoriasis, allergies, eczema, dandruff, and fungal infections to chronic and recurrent skin conditions, we offer evidence-based treatments tailored to each patient.</p>"
-            },
-            "paediatric-geriatric": {
-                title: "Paediatric &amp; Geriatric Concerns",
-                image: "./assets/concerns/paediatric.jpg",
-                desc: "<p>Specialized, gentle care for children's skin conditions and age-related skin changes in seniors.</p>"
-            },
-            "excessive-sweating": {
-                title: "Excessive Sweating",
-                image: "./assets/concerns/sweating.jpg",
-                desc: "<p>Excessive sweating, or hyperhidrosis, can affect daily life and confidence. We offer effective treatment options like botox injections, iontophoresis, and prescription therapies to help control sweating in areas such as the underarms, palms, soles and forehead.</p>"
-            },
-            "nail-disorders": {
-                title: "Nail Disorders",
-                image: "./assets/concerns/nails.jpg",
-                desc: "<p>Brittle nails, fungal infections, and nail psoriasis are treated with oral and topical medications plus laser therapy.</p>"
-            },
-            "fungal-infection": {
-                title: "Fungal Infection",
-                image: "./assets/concerns/fungal.jpg",
-                desc: "<p>Ringworm, athlete's foot, and nail fungus are diagnosed and cleared with modern antifungal protocols.</p>"
-            },
-            "allergies": {
-                title: "Allergies",
-                image: "./assets/concerns/allergies.jpg",
-                desc: "<p>Skin allergies, contact dermatitis, and hives are managed with patch testing and targeted therapy.</p>"
-            },
-            "dandruff": {
-                title: "Dandruff",
-                image: "./assets/concerns/dandruff.jpg",
-                desc: "<p>Chronic scalp flaking and itching are resolved with medicated shampoos, scalp treatments, and laser therapy.</p>"
-            }
-        }
-
-        function renderConcernsGrid() {
-            const grid = document.getElementById('concerns-grid')
-            grid.innerHTML = Object.keys(concernsData).map((key, i) => {
-                const item = concernsData[key]
-                const delay = (i % 4) * 80
-                return `
-                <div id="card-${key}" onclick="openModal('${key}')"
-                     class="reveal concern-card bg-white rounded-3xl overflow-hidden cursor-pointer border border-gray-100 hover:border-brand-soft/40"
-                     style="transition-delay:${delay}ms">
-                    <div class="overflow-hidden h-52">
-                        <img src="${item.image}" alt="${item.title}" class="w-full h-52 object-cover">
-                    </div>
-                    <div class="p-6">
-                        <h3 class="font-semibold text-lg leading-snug">${item.title}</h3>
-                        <p class="text-sm text-gray-400 mt-2">Click to learn more about treatment options</p>
-                        <div class="mt-5 text-brand-dark text-sm font-semibold flex items-center gap-x-1">
-                            Learn more
-                            <span class="card-arrow ml-auto text-xl leading-none">→</span>
-                        </div>
-                    </div>
-                </div>`
-            }).join('')
-
-            // Trigger scroll-reveal
-            requestAnimationFrame(() => {
-                const cards = grid.querySelectorAll('.reveal')
-                const obs = new IntersectionObserver((entries) => {
-                    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target) } })
-                }, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' })
-                cards.forEach(c => obs.observe(c))
-            })
-        }
-
-        let currentModalKey = null
-
-        function openModal(key) {
-            currentModalKey = key
-            const item = concernsData[key]
-            if (!item) return
-            document.getElementById('modal-image').src = item.image
-            document.getElementById('modal-title').innerHTML = item.title
-            document.getElementById('modal-desc').innerHTML = item.desc
-            const modal = document.getElementById('detail-modal')
-            modal.classList.remove('hidden')
-            modal.classList.add('flex')
-            // re-trigger modal-content animation
-            const content = modal.querySelector('.modal-content')
-            content.style.animation = 'none'
-            content.offsetHeight // reflow
-            content.style.animation = ''
-            history.replaceState(null, '', `${window.location.pathname}#${key}`)
-            document.body.style.overflow = 'hidden'
-        }
-
-        function closeModal() {
-            const modal = document.getElementById('detail-modal')
-            modal.classList.add('hidden')
-            modal.classList.remove('flex')
-            document.body.style.overflow = ''
-        }
-
-        // Keyboard close
-        document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal() })
-
-        function initConcerns() {
-            renderConcernsGrid()
-            const hash = window.location.hash.replace(/^#/, '')
-            if (hash && concernsData[hash]) openModal(hash)
-            console.log('%c✅ Concerns page loaded', 'color:#785743; font-size:13px')
-        }
-
-        document.addEventListener('DOMContentLoaded', initConcerns)
-    </script>
+    <script src="./assets/js/site.js" defer></script>
+    <script src="./assets/js/concerns.js" defer></script>
+    <script src="./assets/js/catalog.js" defer></script>
 </body>
 </html>

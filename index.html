@@ -78,459 +78,12 @@
     <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/all.min.css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&amp;family=Playfair+Display:wght@600&amp;display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-
-        :root {
-            --brand: #CFAA89;
-            --brand-light: #DDC6AC;
-            --brand-dark: #785743;
-            --brand-soft: #A7836A;
-        }
-
-        * {
-            transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-            transition-duration: 150ms;
-        }
-
-        .tail-container *:not(i) {
-            font-family: 'Raleway', system_ui, sans-serif;
-        }
-
-        .logo-font {
-            font-family: 'Raleway', sans-serif;
-        }
-
-        .hero-bg {
-            background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('./assets/hero.jpg');
-            background-size: cover;
-            background-position: center;
-        }
-
-        .sticky-header {
-            backdrop-filter: blur(12px);
-        }
-
-        .dropdown {
-            animation: dropdownFade 0.2s ease forwards;
-        }
-
-        @keyframes dropdownFade {
-            from {
-                opacity: 0;
-                transform: translateY(-8px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .card-hover {
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        .card-hover:hover {
-            transform: translateY(-4px);
-            box-shadow: 25px 25px 0 -10px rgba(210, 180, 140, 0.15);
-        }
-
-        .modal-content {
-            animation: modalPop 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
-        }
-
-        .whatsapp-button {
-            padding: 5px 15px 5px 15px
-        }
-
-        .home-bg {
-            background-image: url('./assets/home-bg.jpg');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-        }
-
-        /* ─── Scroll-reveal base ─── */
-        .reveal {
-            opacity: 0;
-            transform: translateY(32px);
-            transition: opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1),
-                transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        .reveal.reveal-left {
-            transform: translateX(-36px);
-        }
-
-        .reveal.reveal-right {
-            transform: translateX(36px);
-        }
-
-        .reveal.reveal-scale {
-            transform: scale(0.94);
-        }
-
-        .reveal.visible {
-            opacity: 1 !important;
-            transform: translate(0) scale(1) !important;
-        }
-
-        /* Stagger delays */
-        .delay-100 {
-            transition-delay: 0.1s;
-        }
-
-        .delay-200 {
-            transition-delay: 0.2s;
-        }
-
-        .delay-300 {
-            transition-delay: 0.3s;
-        }
-
-        .delay-400 {
-            transition-delay: 0.4s;
-        }
-
-        .delay-500 {
-            transition-delay: 0.5s;
-        }
-
-        .delay-600 {
-            transition-delay: 0.6s;
-        }
-
-        /* ─── Hero section entrance ─── */
-        @keyframes heroFadeUp {
-            from {
-                opacity: 0;
-                transform: translateY(40px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @keyframes heroBadge {
-            from {
-                opacity: 0;
-                transform: translateY(-16px) scale(0.95);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0) scale(1);
-            }
-        }
-
-        .hero-badge {
-            animation: heroBadge 0.7s cubic-bezier(0.34, 1.56, 0.64, 1) 0.2s both;
-        }
-
-        .hero-title {
-            animation: heroFadeUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.45s both;
-        }
-
-        .hero-sub {
-            animation: heroFadeUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.65s both;
-        }
-
-        .hero-ctas {
-            animation: heroFadeUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.85s both;
-        }
-
-        /* ─── Nav entrance ─── */
-        @keyframes navSlideDown {
-            from {
-                opacity: 0;
-                transform: translateY(-100%);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        /* Nav animation removed — it creates a stacking context that traps dropdowns behind the hero */
-        nav.sticky-header {
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        /* Ensure dropdowns always sit above everything */
-        nav .dropdown,
-        nav [class*="group-hover"] {
-            z-index: 1001 !important;
-        }
-
-        /* ─── Scroll indicator bounce ─── */
-        @keyframes scrollBounce {
-
-            0%,
-            100% {
-                transform: translateY(0);
-                opacity: 0.7;
-            }
-
-            50% {
-                transform: translateY(8px);
-                opacity: 1;
-            }
-        }
-
-        .scroll-indicator {
-            animation: scrollBounce 1.8s ease-in-out infinite;
-        }
-
-        /* ─── WhatsApp pulse glow ─── */
-        @keyframes wpPulse {
-            0% {
-                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
-            }
-
-            70% {
-                box-shadow: 0 0 0 12px rgba(37, 211, 102, 0);
-            }
-
-            100% {
-                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
-            }
-        }
-
-        .whatsapp-pulse {
-            animation: wpPulse 2.2s ease-out infinite;
-        }
-
-        /* ─── Team card hover ─── */
-        .team-card {
-            transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1),
-                box-shadow 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-            border-radius: 1.5rem;
-            padding: 1rem;
-            margin: -1rem;
-        }
-
-        .team-card:hover {
-            transform: translateY(-6px);
-            box-shadow: 0 20px 40px -10px rgba(120, 87, 67, 0.15);
-        }
-
-        .team-card img {
-            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        .team-card:hover img {
-            transform: scale(1.04);
-        }
-
-        /* ─── Underline hover on nav links ─── */
-        nav a:not(.flex):not([class*="bg-"]):not([class*="border"]) {
-            position: relative;
-        }
-
-        nav a:not(.flex):not([class*="bg-"]):not([class*="border"])::after {
-            content: '';
-            position: absolute;
-            bottom: -2px;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: var(--brand-dark);
-            transition: width 0.25s ease;
-        }
-
-        nav a:not(.flex):not([class*="bg-"]):not([class*="border"]):hover::after {
-            width: 100%;
-        }
-
-        /* ─── Section label pill pop ─── */
-        @keyframes pillPop {
-            from {
-                opacity: 0;
-                transform: scale(0.85) translateY(8px);
-            }
-
-            to {
-                opacity: 1;
-                transform: scale(1) translateY(0);
-            }
-        }
-
-        .section-pill {
-            animation: none;
-        }
-
-        /* triggered by JS */
-
-        /* ─── Shimmer on hero overlay ─── */
-        @keyframes heroShimmer {
-            0% {
-                background-position: -200% center;
-            }
-
-            100% {
-                background-position: 200% center;
-            }
-        }
-
-        .hero-shimmer-line {
-            display: inline-block;
-            background: linear-gradient(90deg,
-                    rgba(255, 255, 255, 0.55) 0%,
-                    rgba(255, 255, 255, 1) 40%,
-                    rgba(255, 255, 255, 0.55) 100%);
-            background-size: 200% auto;
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-            animation: heroShimmer 4s linear infinite;
-        }
-
-        /* ─── Floating particle dots on hero ─── */
-        @keyframes floatDot {
-
-            0%,
-            100% {
-                transform: translateY(0) scale(1);
-                opacity: 0.35;
-            }
-
-            50% {
-                transform: translateY(-18px) scale(1.15);
-                opacity: 0.6;
-            }
-        }
-
-        .hero-dot {
-            position: absolute;
-            border-radius: 50%;
-            background: var(--brand-light);
-            pointer-events: none;
-        }
-
-        .hero-dot:nth-child(1) {
-            width: 8px;
-            height: 8px;
-            top: 18%;
-            right: 22%;
-            animation: floatDot 5s ease-in-out infinite 0s;
-        }
-
-        .hero-dot:nth-child(2) {
-            width: 5px;
-            height: 5px;
-            top: 65%;
-            right: 15%;
-            animation: floatDot 7s ease-in-out infinite 1.5s;
-        }
-
-        .hero-dot:nth-child(3) {
-            width: 11px;
-            height: 11px;
-            top: 40%;
-            right: 35%;
-            animation: floatDot 6s ease-in-out infinite 0.8s;
-        }
-
-        /* ─── Contact card entrance ─── */
-        .contact-card {
-            transition: transform 0.35s ease, box-shadow 0.35s ease;
-        }
-
-        .contact-card:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 24px 48px -12px rgba(120, 87, 67, 0.12);
-        }
-
-        /* ─── Smooth scroll ─── */
-        html {
-            scroll-behavior: smooth;
-        }
-
-        /* ─── Footer link hover slide ─── */
-        footer a {
-            position: relative;
-            display: inline-block;
-            transition: color 0.2s ease, transform 0.2s ease;
-        }
-
-        footer a:hover {
-            transform: translateX(4px);
-        }
-
-        /* ─── Touch device: disable hover transforms ─── */
-        @media (hover: none) {
-            .team-card:hover {
-                transform: none;
-                box-shadow: none;
-            }
-
-            .team-card:hover img {
-                transform: none;
-            }
-
-            .contact-card:hover {
-                transform: none;
-                box-shadow: none;
-            }
-
-            .card-hover:hover {
-                transform: none;
-                box-shadow: none;
-            }
-
-            footer a:hover {
-                transform: none;
-            }
-        }
-
-        /* ─── Reduce reveal distance on small screens ─── */
-        @media (max-width: 639px) {
-            .reveal {
-                transform: translateY(14px);
-            }
-
-            .reveal.reveal-left {
-                transform: translateY(14px);
-            }
-
-            .reveal.reveal-right {
-                transform: translateY(14px);
-            }
-        }
-
-        /* ─── Accessibility: respect reduced-motion ─── */
-        @media (prefers-reduced-motion: reduce) {
-
-            *,
-            .hero-badge,
-            .hero-title,
-            .hero-sub,
-            .hero-ctas,
-            .whatsapp-pulse,
-            .scroll-indicator,
-            .hero-shimmer-line,
-            .hero-dot {
-                animation: none !important;
-                transition-duration: 0.01ms !important;
-            }
-
-            .reveal {
-                opacity: 1 !important;
-                transform: none !important;
-            }
-        }
-    </style>
+    <script src="./assets/js/tailwind-config.js"></script>
+    <link rel="stylesheet" href="./css/site.css">
+    <link rel="stylesheet" href="./css/home.css">
 </head>
 
-<body class="tail-container">
+<body class="tail-container home-page">
     <!-- HEADER (sticky for ALL pages - copy this entire nav block to every HTML file) -->
     <nav class="sticky-header bg-white border-b border-gray-100 shadow-sm z-50">
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
@@ -732,18 +285,18 @@
                 <div class="hidden lg:flex items-center gap-x-4">
                     <a href="https://api.whatsapp.com/send?phone=917276825422&text=Hello%20Skinfit%20Aesthetics%2C%20I%20would%20like%20to%20book%20an%20appointment"
                         target="_blank"
-                        class="whatsapp-pulse flex items-center justify-center gap-x-3 bg-[#25D366] text-white h-14 rounded-3xl text-sm font-medium whatsapp-button">
+                        class="flex w-48 h-12 items-center justify-center gap-x-3 bg-[#25D366] text-white rounded-3xl text-sm font-medium">
                         <i class="fa-brands fa-whatsapp text-2xl"></i>
-                        BOOK VIA WHATSAPP
+                        Book Via WhatsApp
                     </a>
                     <a href="index.html#contact"
-                        class="border border-brand-dark hover:bg-brand-dark hover:text-white text-brand-dark px-7 py-3 rounded-3xl font-medium text-sm">
+                        class="flex w-48 h-12 items-center justify-center border border-brand-dark hover:bg-brand-dark hover:text-white text-brand-dark rounded-3xl font-medium text-sm">
                         Book Appointment
                     </a>
                 </div>
 
                 <!-- Mobile Hamburger -->
-                <button onclick="toggleMobileMenu()"
+                <button data-menu-toggle aria-label="Toggle navigation menu" aria-controls="mobile-menu" aria-expanded="false"
                     class="lg:hidden w-11 h-11 flex items-center justify-center text-2xl text-gray-700 hover:text-brand-dark">
                     <i class="fa-solid fa-bars" id="hamburger-icon"></i>
                 </button>
@@ -753,27 +306,27 @@
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden lg:hidden bg-white border-t px-6 py-6 shadow-xl">
             <div class="flex flex-col gap-y-6 text-base">
-                <a href="index.html#about" onclick="toggleMobileMenu()" class="font-medium">About</a>
-                <a href="index.html#contact" onclick="toggleMobileMenu()" class="font-medium">Contact us / Book
+                <a href="index.html#about" data-menu-close class="font-medium">About</a>
+                <a href="index.html#contact" data-menu-close class="font-medium">Contact us / Book
                     Appointment</a>
 
                 <div class="border-t pt-4">
                     <p class="text-xs uppercase tracking-widest text-gray-400 mb-3">Concerns</p>
                     <div class="grid grid-cols-2 gap-2 text-sm">
-                        <a href="concerns.html#acne-pimples" onclick="toggleMobileMenu()"
+                        <a href="concerns.html#acne-pimples" data-menu-close
                             class="py-2 px-4 hover:bg-gray-100 rounded-2xl">Acne / Pimples</a>
-                        <a href="concerns.html#acne-scar" onclick="toggleMobileMenu()"
+                        <a href="concerns.html#acne-scar" data-menu-close
                             class="py-2 px-4 hover:bg-gray-100 rounded-2xl">Acne Scar</a>
-                        <a href="concerns.html#pigmentation-glow" onclick="toggleMobileMenu()"
+                        <a href="concerns.html#pigmentation-glow" data-menu-close
                             class="py-2 px-4 hover:bg-gray-100 rounded-2xl">Pigmentation / Glow</a>
-                        <a href="concerns.html#anti-ageing" onclick="toggleMobileMenu()"
+                        <a href="concerns.html#anti-ageing" data-menu-close
                             class="py-2 px-4 hover:bg-gray-100 rounded-2xl">Anti Ageing</a>
-                        <a href="concerns.html#hair-loss" onclick="toggleMobileMenu()"
+                        <a href="concerns.html#hair-loss" data-menu-close
                             class="py-2 px-4 hover:bg-gray-100 rounded-2xl">Hair Loss</a>
-                        <a href="concerns.html#excessive-hair-growth" onclick="toggleMobileMenu()"
+                        <a href="concerns.html#excessive-hair-growth" data-menu-close
                             class="py-2 px-4 hover:bg-gray-100 rounded-2xl">Excessive Hair Growth</a>
                         <!-- ... remaining concerns abbreviated for brevity but you can copy full list from desktop dropdown -->
-                        <a href="concerns.html" onclick="toggleMobileMenu()"
+                        <a href="concerns.html" data-menu-close
                             class="py-2 px-4 hover:bg-gray-100 rounded-2xl text-brand-dark font-medium">View all
                             concerns
                             →</a>
@@ -783,12 +336,12 @@
                 <div class="border-t pt-4">
                     <p class="text-xs uppercase tracking-widest text-gray-400 mb-3">Treatments</p>
                     <div class="grid grid-cols-2 gap-2 text-sm">
-                        <a href="treatments.html#chemical-peels" onclick="toggleMobileMenu()"
+                        <a href="treatments.html#chemical-peels" data-menu-close
                             class="py-2 px-4 hover:bg-gray-100 rounded-2xl">Chemical Peels</a>
-                        <a href="treatments.html#botox" onclick="toggleMobileMenu()"
+                        <a href="treatments.html#botox" data-menu-close
                             class="py-2 px-4 hover:bg-gray-100 rounded-2xl">BOTOX</a>
                         <!-- ... abbreviated - copy full list from desktop dropdown -->
-                        <a href="treatments.html" onclick="toggleMobileMenu()"
+                        <a href="treatments.html" data-menu-close
                             class="py-2 px-4 hover:bg-gray-100 rounded-2xl text-brand-dark font-medium">View all
                             treatments →</a>
                     </div>
@@ -796,7 +349,7 @@
 
                 <div class="pt-4 border-t flex flex-col gap-y-3">
                     <a href="https://wa.me/917276825422?text=Hello%20Skinfit%20Aesthetics%2C%20I%20would%20like%20to%20book%20an%20appointment"
-                        target="_blank" onclick="toggleMobileMenu()"
+                        target="_blank" data-menu-close
                         class="flex justify-center items-center gap-x-2 bg-brand-dark text-white py-4 rounded-3xl font-medium">
                         <i class="fa-brands fa-whatsapp text-xl"></i>
                         Book via WhatsApp
@@ -838,7 +391,7 @@
                     </a>
                     <a href="https://wa.me/917276825422?text=Hello%20Skinfit%20Aesthetics%2C%20I%20would%20like%20to%20book%20an%20appointment"
                         target="_blank"
-                        class="whatsapp-pulse border-2 border-white text-white px-7 sm:px-10 py-4 sm:py-5 rounded-3xl font-bold flex items-center justify-center gap-x-3 hover:bg-white/10">
+                        class="border-2 border-white text-white px-7 sm:px-10 py-4 sm:py-5 rounded-3xl font-bold flex items-center justify-center gap-x-3 hover:bg-white/10">
                         <i class="fa-brands fa-whatsapp text-2xl"></i>
                         WhatsApp Us
                     </a>
@@ -949,11 +502,11 @@
 
     <!-- CONTACT / BOOK APPOINTMENT SECTION -->
     <section id="contact" class="py-14 lg:py-24 bg-[#F9F5F0]">
-        <div class="max-w-7xl mx-auto px-6 lg:px-8">
-            <div class="grid lg:grid-cols-12 gap-8 lg:gap-16">
+        <div class="contact-section-container max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid xl:grid-cols-[1.1fr_0.9fr] gap-8 xl:gap-12">
 
                 <!-- Left placard + info -->
-                <div class="lg:col-span-5 flex flex-col">
+                <div class="flex flex-col">
                     <div
                         class="contact-card reveal reveal-left bg-white rounded-3xl shadow-xl p-6 sm:p-8 lg:p-10 flex flex-col flex-1">
                         <h2 class="text-3xl sm:text-4xl font-semibold logo-font">Get in touch</h2>
@@ -983,6 +536,14 @@
                                 </div>
                             </div>
 
+                            <!-- Clinic location -->
+                            <iframe
+                                class="contact-map-embed"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.642221448244!2d73.93107727703537!3d18.54506322346487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c1476868eba1%3A0xb334b0d2be53219d!2sSkinfit%20aesthetics!5e0!3m2!1sen!2sus!4v1776608858318!5m2!1sen!2sus"
+                                title="Skinfit Aesthetics clinic location"
+                                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+
                             <!-- Timings -->
                             <div class="flex items-start gap-x-3 sm:gap-x-4">
                                 <i class="fa-solid fa-clock text-brand-dark text-xl sm:text-2xl mt-1 flex-shrink-0"></i>
@@ -1008,25 +569,30 @@
                         <!-- WhatsApp CTA -->
                         <a href="https://wa.me/917276825422?text=Hello%20Skinfit%20Aesthetics%2C%20I%20would%20like%20to%20book%20an%20appointment"
                             target="_blank"
-                            class="whatsapp-pulse mt-4 sm:mt-6 flex items-center justify-center gap-x-2 sm:gap-x-3 bg-[#25D366] text-white px-4 sm:px-6 py-4 rounded-3xl text-sm sm:text-base font-medium w-full leading-tight">
+                            class="mt-4 sm:mt-6 flex items-center justify-center gap-x-2 sm:gap-x-3 bg-[#25D366] text-white px-4 sm:px-6 py-4 rounded-3xl text-sm sm:text-base font-medium w-full leading-tight">
                             <i class="fa-brands fa-whatsapp text-xl sm:text-2xl flex-shrink-0"></i>
-                            <span>INSTANT BOOKING VIA WHATSAPP</span>
+                            <span>BOOK VIA WHATSAPP</span>
                         </a>
                     </div>
                 </div>
 
-                <!-- Right: Google Maps + Form -->
-                <div class="lg:col-span-7 flex flex-col">
+                <!-- Right: Online booking -->
+                <div class="flex flex-col">
                     <div
-                        class="contact-card reveal reveal-right delay-200 bg-white rounded-3xl p-6 sm:p-8 shadow-xl flex flex-col flex-1">
-                        <!-- Google Maps Embed - REPLACE src with your own embed code -->
+                        class="contact-card reveal reveal-right delay-200 bg-white rounded-3xl p-6 sm:p-8 lg:p-10 shadow-xl flex flex-col flex-1">
+                        <h2 class="text-2xl sm:text-3xl font-semibold logo-font">Book an appointment online</h2>
+                        <p class="text-gray-600 mt-2 mb-5 text-sm sm:text-base">Choose a service and reserve your
+                            consultation in just a few steps.</p>
+
+                        <!-- Practice Oak booking -->
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.642221448244!2d73.93107727703537!3d18.54506322346487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c1476868eba1%3A0xb334b0d2be53219d!2sSkinfit%20aesthetics!5e0!3m2!1sen!2sus!4v1776608858318!5m2!1sen!2sus"
-                            width="100%" style="border:0; border-radius: 20px; flex: 1; min-height: 220px;"
-                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                            src="https://practiceoak.com/book/skinfit-aesthetics-woy9"
+                            title="Book an appointment with Skinfit Aesthetics"
+                            class="practiceoak-booking-embed"
+                            loading="lazy">
                         </iframe>
 
-                        <!-- Contact Form -->
+                        <!-- Previous contact form retained for reference
                         <form id="contact-form" class="mt-6 sm:mt-10 grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
                             <div>
                                 <label class="block text-sm font-medium text-gray-600 mb-2">Full Name</label>
@@ -1059,6 +625,7 @@
 
                         <p id="form-success" class="hidden mt-4 text-center text-emerald-600 font-medium">✅ Thank you!
                             Your message has been sent. We will reply within 2 hours.</p>
+                        -->
                     </div>
                 </div>
             </div>
@@ -1127,141 +694,9 @@
         </div>
     </footer>
 
-    <script>
-        // Tailwind config
-        function initializeTailwind() {
-            tailwind.config = {
-                content: [],
-                theme: {
-                    extend: {
-                        colors: {
-                            brand: '#CFAA89',
-                            'brand-dark': '#785743',
-                            'brand-soft': '#A7836A'
-                        }
-                    }
-                }
-            }
-        }
-
-        // Mobile menu toggle
-        function toggleMobileMenu() {
-            const menu = document.getElementById('mobile-menu')
-            const icon = document.getElementById('hamburger-icon')
-            if (menu.classList.contains('hidden')) {
-                menu.classList.remove('hidden')
-                icon.classList.replace('fa-bars', 'fa-xmark')
-            } else {
-                menu.classList.add('hidden')
-                icon.classList.replace('fa-xmark', 'fa-bars')
-            }
-        }
-
-        // Contact form handler
-        const WORKER_URL = 'contact.php';
-
-        function handleContactForm() {
-            const form = document.getElementById('contact-form')
-            const successMsg = document.getElementById('form-success')
-            const submitBtn = form ? form.querySelector('button[type="submit"]') : null
-
-            if (!form) return
-
-            form.addEventListener('submit', async function (e) {
-                e.preventDefault()
-
-                // Disable button while sending
-                if (submitBtn) {
-                    submitBtn.disabled = true
-                    submitBtn.innerHTML = '<span>SENDING...</span> <i class="fa-solid fa-spinner fa-spin"></i>'
-                }
-
-                const payload = {
-                    name: document.getElementById('name').value.trim(),
-                    phone: document.getElementById('phone').value.trim(),
-                    email: document.getElementById('email').value.trim(),
-                    message: document.getElementById('message').value.trim()
-                }
-
-                try {
-                    const res = await fetch(WORKER_URL, {
-                        method: 'POST',
-                        headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify(payload)
-                    })
-
-                    if (!res.ok) throw new Error('Server error')
-
-                    // Show success
-                    form.classList.add('hidden')
-                    successMsg.classList.remove('hidden')
-
-                    // Reset form after 4.5 seconds
-                    setTimeout(() => {
-                        form.reset()
-                        form.classList.remove('hidden')
-                        successMsg.classList.add('hidden')
-                        if (submitBtn) {
-                            submitBtn.disabled = false
-                            submitBtn.innerHTML = '<span>SEND MESSAGE</span> <i class="fa-solid fa-paper-plane"></i>'
-                        }
-                    }, 4500)
-
-                } catch (err) {
-                    console.error('Form submission error:', err)
-                    alert('Sorry, something went wrong. Please try again or contact us directly.')
-                    if (submitBtn) {
-                        submitBtn.disabled = false
-                        submitBtn.innerHTML = '<span>SEND MESSAGE</span> <i class="fa-solid fa-paper-plane"></i>'
-                    }
-                }
-            })
-        }
-
-        // Initialize everything on home page
-        function initHome() {
-            initializeTailwind()
-            handleContactForm()
-            console.log('%c✅ Skinfit Aesthetics home page initialized successfully', 'color:#785743; font-size:13px')
-        }
-
-        const WHATSAPP_NUMBER = "917276825422";
-        const WHATSAPP_MESSAGE = "Hello Skinfit Aesthetics, I would like to book an appointment.";
-
-        function getWhatsAppLink() {
-            return `https://api.whatsapp.com/send?phone=${WHATSAPP_NUMBER}&text=${encodeURIComponent(WHATSAPP_MESSAGE)}`;
-        }
-
-        // Run when DOM is ready
-        document.addEventListener('DOMContentLoaded', initHome)
-
-        // ─── Scroll-reveal via IntersectionObserver ───
-        document.addEventListener('DOMContentLoaded', () => {
-            const revealEls = document.querySelectorAll('.reveal')
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('visible')
-                        observer.unobserve(entry.target)
-                    }
-                })
-            }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' })
-            revealEls.forEach(el => observer.observe(el))
-        })
-
-        // ─── Subtle parallax on hero background ───
-        document.addEventListener('DOMContentLoaded', () => {
-            const hero = document.querySelector('header.hero-bg')
-            if (!hero) return
-            window.addEventListener('scroll', () => {
-                const scrolled = window.scrollY
-                if (scrolled < window.innerHeight * 1.5) {
-                    hero.style.backgroundPositionY = `calc(center + ${scrolled * 0.25}px)`
-                }
-            }, { passive: true })
-        })
-    </script>
-    <script src="./assets/js/site-config.js"></script>
+    <script src="./assets/js/site.js" defer></script>
+    <script src="./assets/js/home.js" defer></script>
+    <script src="./assets/js/site-config.js" defer></script>
 </body>
 
 </html>

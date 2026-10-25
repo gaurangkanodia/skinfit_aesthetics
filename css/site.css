@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --brand: #CFAA89;
+    --brand-light: #DDC6AC;
+    --brand-dark: #785743;
+    --brand-soft: #A7836A;
+}
+
+body.home-page *,
+body.catalog-page * {
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+}
+
+body.home-page * {
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+}
+
+body.catalog-page * {
+    transition-property: color, background-color, border-color;
+}
+
+.tail-container *:not(i) {
+    font-family: 'Raleway', system-ui, sans-serif;
+}
+
+.logo-font {
+    font-family: 'Raleway', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.sticky-header {
+    backdrop-filter: blur(12px);
+}
+
+nav.sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav .dropdown,
+nav [class*="group-hover"] {
+    z-index: 1001 !important;
+}
+
+.dropdown {
+    animation: dropdownFade 0.2s ease forwards;
+}
+
+@keyframes dropdownFade {
+    from {
+        opacity: 0;
+        transform: translateY(-8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+nav a:not(.flex):not([class*="bg-"]):not([class*="border"]) {
+    position: relative;
+}
+
+nav a:not(.flex):not([class*="bg-"]):not([class*="border"])::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--brand-dark);
+    transition: width 0.25s ease;
+}
+
+nav a:not(.flex):not([class*="bg-"]):not([class*="border"]):hover::after {
+    width: 100%;
+}
+
+footer a {
+    position: relative;
+    display: inline-block;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+@media (hover: hover) {
+    footer a:hover {
+        transform: translateX(4px);
+    }
+}
+
+@media (hover: none) {
+    footer a:hover {
+        transform: none;
+    }
+}

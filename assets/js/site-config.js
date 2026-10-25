@@ -1,6 +1,6 @@
 (() => {
     const socialLinks = Object.freeze({
-        instagram: 'https://www.instagram.com/skinfit_aesthetics_clinic/',
+        instagram: 'https://www.instagram.com/skinfit.aesthetics_/?hl=en',
         facebook: 'https://www.facebook.com/profile.php?id=61591991960112#'
     })
 
